@@ -1,33 +1,33 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-#DEB_MAKE_CHECK_TARGET = test_vertcoin
-#build/vertcoind::
-#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_vertcoin)
+#DEB_MAKE_CHECK_TARGET = test_logos
+#build/logosd::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_logos)
 
-DEB_INSTALL_EXAMPLES_vertcoind += debian/examples/*
-DEB_INSTALL_MANPAGES_vertcoind += debian/manpages/*
+DEB_INSTALL_EXAMPLES_logosd += debian/examples/*
+DEB_INSTALL_MANPAGES_logosd += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix vertcoind
+	cd src; $(MAKE) -f makefile.unix logosd
 	$(MAKE)
 
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f vertcoin-qt; fi
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f logos-qt; fi
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake vertcoin-qt.pro USE_QRCODE=1
+	qmake logos-qt.pro USE_QRCODE=1
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_vertcoin
-	src/test_vertcoin
+	cd src; $(MAKE) -f makefile.unix test_logos
+	src/test_logos
 
 # Ensure wrapper is set executable
-binary-post-install/vertcoind:
-	chmod +x $(cdbs_curdestdir)usr/bin/vertcoind
-binary-post-install/vertcoin-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/vertcoin-qt
+binary-post-install/logosd:
+	chmod +x $(cdbs_curdestdir)usr/bin/logosd
+binary-post-install/logos-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/logos-qt

@@ -1112,7 +1112,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Vertcoin " + FormatFullVersion();
+        string strDesc = "Logos " + FormatFullVersion();
 
         try {
             loop {
@@ -1187,21 +1187,21 @@ void MapPort(bool)
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
     {"dnsseed.meningslos.info", "dnsseed.meningslos.info"},
-    {"ams1.vertcoin.org", "ams1.vertcoin.org"},
-    {"ams2.vertcoin.org", "ams2.vertcoin.org"},
-    {"ams3.vertcoin.org", "ams3.vertcoin.org"},
-    {"ams4.vertcoin.org", "ams4.vertcoin.org"},
-    {"nl1.vertcoin.org", "nl1.vertcoin.org"},
-    {"nl2.vertcoin.org", "nl2.vertcoin.org"},
-    {"se1.vertcoin.org", "se1.vertcoin.org"},
-    {"ny.vertcoin.org", "ny.vertcoin.org"},
-    {"la.vertcoin.org", "la.vertcoin.org"},
-    {"eu.vertcoin.org", "eu.vertcoin.org"},
+    {"ams1.logos.org", "ams1.logos.org"},
+    {"ams2.logos.org", "ams2.logos.org"},
+    {"ams3.logos.org", "ams3.logos.org"},
+    {"ams4.logos.org", "ams4.logos.org"},
+    {"nl1.logos.org", "nl1.logos.org"},
+    {"nl2.logos.org", "nl2.logos.org"},
+    {"se1.logos.org", "se1.logos.org"},
+    {"ny.logos.org", "ny.logos.org"},
+    {"la.logos.org", "la.logos.org"},
+    {"eu.logos.org", "eu.logos.org"},
     {NULL, NULL}
 };
 
 static const char *strTestNetDNSSeed[][2] = {
-    {"testnet-seed.vertcoin.org", "testnet-seed.vertcoin.org"},
+    {"testnet-seed.logos.org", "testnet-seed.logos.org"},
     {NULL, NULL}
 };
 
@@ -1782,7 +1782,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Vertcoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. Logos is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());

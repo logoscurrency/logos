@@ -1,12 +1,12 @@
-Building Vertcoin
+Building Logos
 
-See doc/readme-qt.rst for instructions on building Vertcoin-Qt,
+See doc/readme-qt.rst for instructions on building Logos-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Vertcoin.
+implementation of Logos.
 
-See doc/build-*.txt for instructions on building vertcoind,
+See doc/build-*.txt for instructions on building logosd,
 the intended-for-services, no-graphical-interface, reference
-implementation of Vertcoin.
+implementation of Logos.
 
 Further build information and documentation is available at
-the official Vertcoin website, http://www.vertcoin.org
+the official Logos website, http://www.logos.org
