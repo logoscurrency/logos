@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x4d96a915f49d40b1e5c2844d1ee2dccb90013a990ccea12c492d22110489f0c4");
+uint256 hashGenesisBlock("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Logos: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -1096,7 +1096,7 @@ unsigned char GetNfactor(int64 nTimestamp) {
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 50 * COIN;
+    int64 nSubsidy = 1500 * COIN;
 
     // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
     nSubsidy >>= (nHeight / 840000); // Logos: 840k blocks in ~4 years
@@ -1106,8 +1106,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
 
 
-static const int64 nTargetTimespan = 3.5 * 24 * 60 * 60; // Logos: 3.5 days
-static const int64 nTargetSpacing = 2.5 * 60; // Logos: 2.5 minutes
+static const int64 nTargetTimespan = 24 * 60 * 60; // Logos: 1 days
+static const int64 nTargetSpacing =  60; // Logos: 1 minute
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 static const int nKGWInterval = 12; // Timewarp fix - retargets every 12 blocks
 
@@ -2885,11 +2885,11 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;*/
-        pchMessageStart[0] = 'v';
-        pchMessageStart[1] = 'e';
-        pchMessageStart[2] = 'r';
-        pchMessageStart[3] = 't';
-        hashGenesisBlock = uint256("0xbd270cb82121e85f4eba6d0c2ffdc9eb74674eb9bafed9bbaa0fe8f47d971aae");
+        pchMessageStart[0] = 'l';
+        pchMessageStart[1] = 'o';
+        pchMessageStart[2] = 'g';
+        pchMessageStart[3] = 'o';
+        hashGenesisBlock = uint256("0x");
         //hashGenesisBlock = uint256("0xf5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f");
     }
 
@@ -2917,7 +2917,7 @@ bool InitBlockIndex() {
     if (!fReindex) {
 
         // Genesis block
-        const char* pszTimestamp = "01/09/2014 Germany to Help in Disposal of Syrian Chemical Weapons";
+        const char* pszTimestamp = "Say Hello to Logos";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2938,7 +2938,7 @@ bool InitBlockIndex() {
         {
 
             block.nNonce = 11521194;
-            block.nTime = 1389306217;
+            block.nTime = 1397686205;
         }
 
         //// debug print
@@ -2946,8 +2946,41 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x4af38ca0e323c0a5226208a73b7589a52c030f234810cf51e13e3249fc0123e7"));
+        assert(block.hashMerkleRoot == uint256("0x"));
        
+        if (false &&block.GetHash() != hashGenesisBlock)
+        {
+            printf("Searching for genesis block...\n");
+            // This will figure out a valid hash and Nonce if you're
+            // creating a different genesis block:
+            uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+            uint256 thash;
+
+            unsigned long int scrypt_scratpad_size_current_block = ((1 << (GetNfactor(block.nTime) + 1)) * 128 ) + 63;
+            char scratchpad[scrypt_scratpad_size_current_block];
+
+            loop
+            {
+           // Generic scrypt
+                scrypt_N_1_1_256_sp_generic(BEGIN(block.nVersion), BEGIN(thash), scratchpad, GetNfactor(block.nTime));
+
+                if (thash <= hashTarget)
+                {
+               printf ("found it!\n");
+                    break;
+                }
+                if ((block.nNonce & 0xFFF) == 0)
+                {
+                    printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+                }
+                ++block.nNonce;
+                if (block.nNonce == 0)
+                {
+                    printf("NONCE WRAPPED, incrementing time\n");
+                    ++block.nTime;
+                }
+            }
+         }
         
         block.print();
         assert(hash == hashGenesisBlock);
@@ -3221,7 +3254,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xfa, 0xbf, 0xb5, 0xda }; // Logos: increase each by adding 1 to bitcoin's value.
+unsigned char pchMessageStart[4] = { 0xeb, 0xd2, 0xd6, 0xcb }; // Logos
 
 
 void static ProcessGetData(CNode* pfrom)
