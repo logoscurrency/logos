@@ -1,7 +1,7 @@
 src/*.exe
-src/vertcoin
-src/vertcoind
-src/test_vertcoin
+src/logos
+src/logosd
+src/test_logoscoin
 .*.swp
 *.*~*
 *.bak
@@ -14,12 +14,12 @@ src/test_vertcoin
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-vertcoin-qt
-Vertcoin-Qt.app
+logos-qt
+Logos-Qt.app
 
 # Unit-tests
 Makefile.test
-vertcoin-qt_test
+logos-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -31,6 +31,6 @@ qrc_*.cpp
 .DS_Store
 build
 Info
-Vertcoin-Qt.xcodeproj
+Logos-Qt.xcodeproj
 
 !src/leveldb-*/Makefile

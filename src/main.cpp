@@ -1096,8 +1096,14 @@ unsigned char GetNfactor(int64 nTimestamp) {
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 1500 * COIN;
 
+    int64 nSubsidy;
+
+    if ( nHeight <= 100 ) {
+	nSubsidy = 4500000000 * COIN;
+    }else{
+	nSubsidy = 1500 * COIN;
+    }
     // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
     nSubsidy >>= (nHeight / 840000); // Logos: 840k blocks in ~4 years
 
@@ -2889,7 +2895,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 'o';
         pchMessageStart[2] = 'g';
         pchMessageStart[3] = 'o';
-        hashGenesisBlock = uint256("0x");
+        hashGenesisBlock = uint256("0xb514472cb1b84e6e8b34ff4ac15d2db9114f766e610b5c8091717d5e6a74820e");
         //hashGenesisBlock = uint256("0xf5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f");
     }
 
@@ -2916,8 +2922,14 @@ bool InitBlockIndex() {
     // Only add the genesis block if not reindexing (in which case we reuse the one already on disk)
     if (!fReindex) {
 
+       	const char* pszTimestamp;
         // Genesis block
-        const char* pszTimestamp = "Say Hello to Logos";
+        if (fTestNet)
+        {
+        	pszTimestamp = "Say Hello to Logos";
+	} else {
+        	pszTimestamp = "Say Hello to Logos we are live";
+	}
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2937,7 +2949,7 @@ bool InitBlockIndex() {
         if (fTestNet)
         {
 
-            block.nNonce = 11521194;
+            block.nNonce = 13012655;
             block.nTime = 1397686205;
         }
 
@@ -2946,9 +2958,14 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x"));
-       
-        if (false &&block.GetHash() != hashGenesisBlock)
+
+        if (fTestNet)
+        {
+        	assert(block.hashMerkleRoot == uint256("0xfbea2fe03049995cb2cf62e2584190a4bb3b0afc116b066803137858c373a029"));
+	} else {
+        	assert(block.hashMerkleRoot == uint256("0x"));
+	}
+        if (true &&block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
