@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0x9bb31f2dec1458c6d90b958fdbb960a2a0b7c7b64aecf588e635ef3ee085460d");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Logos: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -50,9 +50,9 @@ unsigned int nCoinCacheSize = 5000;
 int64 nChainStartTime = 1389306217; // Line: 2815
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64 CTransaction::nMinTxFee = 100000;
+int64 CTransaction::nMinTxFee = 10;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
-int64 CTransaction::nMinRelayTxFee = 100000;
+int64 CTransaction::nMinRelayTxFee = 10;
 
 CMedianFilter<int> cPeerBlockCounts(8, 0); // Amount of blocks that other nodes claim to have
 
@@ -2943,8 +2943,8 @@ bool InitBlockIndex() {
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce = 5749262;
-        block.nTime = 1389311371;
+        block.nNonce = 6951820;
+        block.nTime = 1397694736;
         
         if (fTestNet)
         {
@@ -2963,7 +2963,7 @@ bool InitBlockIndex() {
         {
         	assert(block.hashMerkleRoot == uint256("0xfbea2fe03049995cb2cf62e2584190a4bb3b0afc116b066803137858c373a029"));
 	} else {
-        	assert(block.hashMerkleRoot == uint256("0x"));
+        	assert(block.hashMerkleRoot == uint256("0xf3064497f44e8e8b13c8f232062d32d226b4ae40d795b7d6410d25c99a57ef37"));
 	}
         if (true &&block.GetHash() != hashGenesisBlock)
         {
