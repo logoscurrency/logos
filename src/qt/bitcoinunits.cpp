@@ -34,8 +34,8 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("LGS");
-    case mBTC: return QString("mLGS");
+    case BTC: return QString("kLGS");
+    case mBTC: return QString("LGS");
     case uBTC: return QString::fromUtf8("μLGS");
     default: return QString("???");
     }
@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Logoss");
-    case mBTC: return QString("Milli-Logoss (1 / 1,000)");
-    case uBTC: return QString("Micro-Logoss (1 / 1,000,000)");
+    case BTC: return QString("kLogos 1000");
+    case mBTC: return QString("Logos");
+    case uBTC: return QString("Cents Logos 0,01");
     default: return QString("???");
     }
 }
@@ -56,10 +56,10 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case BTC:  return 100000000;
-    case mBTC: return 100000;
-    case uBTC: return 100;
-    default:   return 100000000;
+    case BTC:  return 100000;
+    case mBTC: return 100;
+    case uBTC: return 1;
+    default:   return 100;
     }
 }
 
@@ -67,10 +67,10 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case BTC: return 8; // 21,000,000 (# digits, without commas)
-    case mBTC: return 11; // 21,000,000,000
-    case uBTC: return 14; // 21,000,000,000,000
-    default: return 0;
+    case BTC: return 11; // 21,000,000 (# digits, without commas)
+    case mBTC: return 14; // 21,000,000,000
+    case uBTC: return 16; // 21,000,000,000,000
+    default: return 14;
     }
 }
 
@@ -78,10 +78,10 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case BTC: return 8;
-    case mBTC: return 5;
-    case uBTC: return 2;
-    default: return 0;
+    case BTC: return 5;
+    case mBTC: return 2;
+    case uBTC: return 0;
+    default: return 2;
     }
 }
 
