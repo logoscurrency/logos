@@ -20,7 +20,7 @@ public:
     enum Unit
     {
         BTC,
-        mBTC,
+        kBTC,
         uBTC
     };
 
