@@ -7,7 +7,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About Logos</source>
-        <translation>About Logos</translation>
+        <translation>About the Logos anonymous desktop wallet</translation>
     </message>
     <message>
         <location line="+39"/>
@@ -37,7 +37,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <source>The Logos developers</source>
-        <translation>The Logos developers</translation>
+        <translation>The developers on behalf of the Logos ecosystem</translation>
     </message>
 </context>
 <context>
@@ -45,17 +45,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>Address Book</source>
-        <translation>Address Book</translation>
+        <translation>Address book</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Double-click to edit address or label</source>
-        <translation>Double-click to edit address or label</translation>
+        <translation>Double-click to edit a wallet address or label</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Create a new address</source>
-        <translation>Create a new address</translation>
+        <translation>Create a new wallet address for you</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -65,7 +65,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-11"/>
         <source>&amp;New Address</source>
-        <translation>&amp;New Address</translation>
+        <translation>&amp;New address</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
@@ -75,7 +75,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Copy Address</translation>
+        <translation>&amp;Copy address</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -85,7 +85,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+11"/>
         <source>Sign a message to prove you own a Logos address</source>
-        <translation>Sign a message to prove you own a Logos address</translation>
+        <translation>Sign a message to prove ownership of your Logos wallet address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,7 +95,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+25"/>
         <source>Delete the currently selected address from the list</source>
-        <translation>Delete the currently selected address from the list</translation>
+        <translation>Delete the selected wallet address from this list</translation>
     </message>
     <message>
         <location line="+27"/>
@@ -110,12 +110,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified Logos address</source>
-        <translation>Verify a message to ensure it was signed with a specified Logos address</translation>
+        <translation>Verify a message to ensure it was signed by a specific Logos wallet address</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Verify Message</translation>
+        <translation>&amp;Verify wallet address</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -125,7 +125,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your Logos addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Logos addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <translation>These are your Logos addresses for sending payments. Always check the amount and the recipient's wallet address prior to sending Logos.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -140,27 +140,27 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Send &amp;Coins</source>
-        <translation>Send &amp;Coins</translation>
+        <translation>Send &amp;Logos</translation>
     </message>
     <message>
         <location line="+260"/>
         <source>Export Address Book Data</source>
-        <translation>Export Address Book Data</translation>
+        <translation>Export this wallet address list</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>Comma separated file (*.csv)</translation>
+        <translation>Comma separated value file (*.csv)</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Error exporting</source>
-        <translation>Error exporting</translation>
+        <translation>An exporting error has occurred</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Could not write to file %1.</source>
-        <translation>Could not write to file %1.</translation>
+        <translation>The file could not be saved as %1.</translation>
     </message>
 </context>
 <context>
@@ -173,7 +173,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Wallet address</translation>
     </message>
     <message>
         <location line="+36"/>
@@ -186,47 +186,47 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
-        <translation>Passphrase Dialog</translation>
+        <translation>Passphrase dialog</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Enter passphrase</source>
-        <translation>Enter passphrase</translation>
+        <translation>Enter your password</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>New passphrase</source>
-        <translation>New passphrase</translation>
+        <translation>Create a new secure password</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat new passphrase</source>
-        <translation>Repeat new passphrase</translation>
+        <translation>Re-enter your new secure password</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="+33"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
+        <translation>Please set your wallet's new password.&lt;br/&gt;Please use a secure password of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Encrypt wallet</source>
-        <translation>Encrypt wallet</translation>
+        <translation>Encrypt your wallet</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>This operation needs your wallet passphrase to unlock the wallet.</translation>
+        <translation>You need to enter your secure password to unlock this wallet.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Unlock wallet</source>
-        <translation>Unlock wallet</translation>
+        <translation>Unlock your wallet</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>This operation needs your wallet passphrase to decrypt the wallet.</translation>
+        <translation>You need to enter your secure password to decrypt this wallet.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -236,22 +236,22 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+3"/>
         <source>Change passphrase</source>
-        <translation>Change passphrase</translation>
+        <translation>Change your secure password</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Enter the old and new passphrase to the wallet.</translation>
+        <translation>Please enter your old and new secure passwords for this wallet.</translation>
     </message>
     <message>
         <location line="+46"/>
         <source>Confirm wallet encryption</source>
-        <translation>Confirm wallet encryption</translation>
+        <translation>Please confirm your wallet encryption</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LOGOSS&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LOGOSS&lt;/b&gt;!</translation>
+        <translation>Warning: If you encrypt your wallet and lose your secure password to your anonymous desktop wallet, you will &lt;b&gt;lose any Logos stored in your wallet.S&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -261,24 +261,24 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+15"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</translation>
+        <translation>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will no longer be accessible as soon as you start using you newly encrypted wallet.</translation>
     </message>
     <message>
         <location line="+100"/>
         <location line="+24"/>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Warning: The Caps Lock key is on!</translation>
+        <translation>Warning: the caps lock key is on!</translation>
     </message>
     <message>
         <location line="-130"/>
         <location line="+58"/>
         <source>Wallet encrypted</source>
-        <translation>Wallet encrypted</translation>
+        <translation>Your wallet has now been encrypted</translation>
     </message>
     <message>
         <location line="-56"/>
         <source>Logos will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your logoss from being stolen by malware infecting your computer.</source>
-        <translation>Logos will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your logoss from being stolen by malware infecting your computer.</translation>
+        <translation>Your Logos anonymous desktop wallet application will close now to complete the encryption process. Remember that encrypting your wallet cannot fully protect your Logos if malware infects your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -286,40 +286,40 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+42"/>
         <location line="+6"/>
         <source>Wallet encryption failed</source>
-        <translation>Wallet encryption failed</translation>
+        <translation>Your wallet encryption has failed</translation>
     </message>
     <message>
         <location line="-54"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</translation>
+        <translation>Your wallet encryption failed due to an internal error. Your wallet is therefore not encrypted. Please try again.</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+48"/>
         <source>The supplied passphrases do not match.</source>
-        <translation>The supplied passphrases do not match.</translation>
+        <translation>The secure passwords you have entered do not match.</translation>
     </message>
     <message>
         <location line="-37"/>
         <source>Wallet unlock failed</source>
-        <translation>Wallet unlock failed</translation>
+        <translation>Your attempt to unlock the anonymous desktop wallet has failed</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+11"/>
         <location line="+19"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>The passphrase entered for the wallet decryption was incorrect.</translation>
+        <translation>The secure password entered for the wallet decryption was incorrect. Please try again.</translation>
     </message>
     <message>
         <location line="-20"/>
         <source>Wallet decryption failed</source>
-        <translation>Wallet decryption failed</translation>
+        <translation>Your attempt to decrypt the anonymous desktop wallet has failed</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Wallet passphrase was successfully changed.</translation>
+        <translation>Your anonymous desktop wallet secure password was changed successfully.</translation>
     </message>
 </context>
 <context>
@@ -332,7 +332,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+280"/>
         <source>Synchronizing with network...</source>
-        <translation>Synchronizing with network...</translation>
+        <translation>Synchronising with the Logos transaction verification network ...</translation>
     </message>
     <message>
         <location line="-349"/>
@@ -342,27 +342,27 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Show general overview of wallet</source>
-        <translation>Show general overview of wallet</translation>
+        <translation>View your Logos anonymous desktop wallet overview</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>&amp;Transactions</source>
-        <translation>&amp;Transactions</translation>
+        <translation>&amp;Your payments and receipts</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
-        <translation>Browse transaction history</translation>
+        <translation>Browse your transaction history</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Edit the list of stored addresses and labels</source>
-        <translation>Edit the list of stored addresses and labels</translation>
+        <translation>Edit your list of saved wallet addresses and labels</translation>
     </message>
     <message>
         <location line="-14"/>
         <source>Show the list of addresses for receiving payments</source>
-        <translation>Show the list of addresses for receiving payments</translation>
+        <translation>List your wallet addresses for receiving payments</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -372,12 +372,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>Quit application</translation>
+        <translation>Exit application</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Show information about Logos</source>
-        <translation>Show information about Logos</translation>
+        <translation>View information about the Logos anonymous desktop wallet</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -387,72 +387,72 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Show information about Qt</source>
-        <translation>Show information about Qt</translation>
+        <translation>Show information about this QT application</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
-        <translation>&amp;Options...</translation>
+        <translation>&amp;Advanced settings...</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Encrypt Wallet...</translation>
+        <translation>&amp;Encrypt your wallet...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Backup Wallet...</translation>
+        <translation>&amp;Backup your wallet...</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Change Passphrase...</translation>
+        <translation>&amp;Change your secure password</translation>
     </message>
     <message>
         <location line="+285"/>
         <source>Importing blocks from disk...</source>
-        <translation>Importing blocks from disk...</translation>
+        <translation>Importing transaction verification blocks</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Reindexing blocks on disk...</source>
-        <translation>Reindexing blocks on disk...</translation>
+        <translation>Re-indexing transaction verification blocks</translation>
     </message>
     <message>
         <location line="-347"/>
         <source>Send coins to a Logos address</source>
-        <translation>Send coins to a Logos address</translation>
+        <translation>Send Logos to a wallet address</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Logos</source>
-        <translation>Modify configuration options for Logos</translation>
+        <translation>Logos anonymous desktop wallet configuration options</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Backup wallet to another location</source>
-        <translation>Backup wallet to another location</translation>
+        <translation>Backup your wallet to another location</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Change the passphrase used for wallet encryption</translation>
+        <translation>Change your secure password used for your anonymous desktop wallet encryption</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Debug window</source>
-        <translation>&amp;Debug window</translation>
+        <translation>&amp;Debug Logos QT</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Open debugging and diagnostic console</source>
-        <translation>Open debugging and diagnostic console</translation>
+        <translation>Open debugging and diagnostic information</translation>
     </message>
     <message>
         <location line="-4"/>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Verify message...</translation>
+        <translation>&amp;Verify message from an anonymous desktop wallet</translation>
     </message>
     <message>
         <location line="-165"/>
@@ -463,22 +463,22 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-530"/>
         <source>Wallet</source>
-        <translation>Wallet</translation>
+        <translation>Anonymous desktop wallet</translation>
     </message>
     <message>
         <location line="+101"/>
         <source>&amp;Send</source>
-        <translation>&amp;Send</translation>
+        <translation>&amp;Make a Logos payment transfer</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Receive</source>
-        <translation>&amp;Receive</translation>
+        <translation>&amp;Your Logos wallet addresses</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>&amp;Addresses</source>
-        <translation>&amp;Addresses</translation>
+        <translation>&amp;All your saved payment counter-party wallet addresses</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -493,42 +493,42 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Show or hide the main Window</source>
-        <translation>Show or hide the main Window</translation>
+        <translation>Show or hide the main application window</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Encrypt the private keys that belong to your wallet</translation>
+        <translation>Encrypt your private keys associated with your wallet</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Sign messages with your Logos addresses to prove you own them</source>
-        <translation>Sign messages with your Logos addresses to prove you own them</translation>
+        <translation>Sign messages you send with your Logos wallet addresses to prove ownership</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified Logos addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Logos addresses</translation>
+        <translation>Verify messages you receive from Logos wallet addresses to confirm counter-party</translation>
     </message>
     <message>
         <location line="+28"/>
         <source>&amp;File</source>
-        <translation>&amp;File</translation>
+        <translation>&amp;Anonymous desktop wallet</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Settings</translation>
+        <translation>&amp;Security settings</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
+        <translation>&amp;About</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Tabs toolbar</source>
-        <translation>Tabs toolbar</translation>
+        <translation>Logos anonymous desktop wallet tool bar</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -545,24 +545,24 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+141"/>
         <source>%n active connection(s) to Logos network</source>
         <translation>
-            <numerusform>%n active connection to Logos network</numerusform>
-            <numerusform>%n active connections to Logos network</numerusform>
+            <numerusform>%n active connection to Logos transaction verification network</numerusform>
+            <numerusform>%n active connections to Logos transaction verification network</numerusform>
         </translation>
     </message>
     <message>
         <location line="+22"/>
         <source>No block source available...</source>
-        <translation>No block source available...</translation>
+        <translation>No transaction verification block source is available</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Processed %1 of %2 (estimated) blocks of transaction history.</translation>
+        <translation>%1 of %2 (estimated) blocks of transaction verification history have been processed.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Processed %1 blocks of transaction history.</source>
-        <translation>Processed %1 blocks of transaction history.</translation>
+        <translation>%1 blocks of transaction verification history have been processed.</translation>
     </message>
     <message numerus="yes">
         <location line="+20"/>
@@ -596,12 +596,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+14"/>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Last received block was generated %1 ago.</translation>
+        <translation>The last received transaction verification block was generated %1 ago.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Transactions after this will not yet be visible.</translation>
+        <translation>Verified transactions after this time are not yet visible.</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -621,7 +621,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
-        <translation>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</translation>
+        <translation>This transaction is outside the transaction size range. You can still send it for a fee of %1. This fee is for transaction verification and helps to support the Logos ecosystem. Please confirm or amend the transaction amount.</translation>
     </message>
     <message>
         <location line="-140"/>
@@ -631,22 +631,22 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+31"/>
         <source>Catching up...</source>
-        <translation>Catching up...</translation>
+        <translation>Obtaining latest transaction verification data</translation>
     </message>
     <message>
         <location line="+113"/>
         <source>Confirm transaction fee</source>
-        <translation>Confirm transaction fee</translation>
+        <translation>Confirm the transaction verification fee</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Sent transaction</source>
-        <translation>Sent transaction</translation>
+        <translation>Outgoing payment to a counter-party</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Incoming transaction</translation>
+        <translation>Incoming payment from a counter-party</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -671,22 +671,22 @@ Address: %4
         <location line="-23"/>
         <location line="+23"/>
         <source>URI can not be parsed! This can be caused by an invalid Logos address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Logos address or malformed URI parameters.</translation>
+        <translation>URI can not be parsed! This can be caused by an invalid Logos wallet address or incorrect URI parameters.</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
+        <translation>Your anonymous desktop wallet is &lt;b&gt;encrypted&lt;/b&gt; and is currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
+        <translation>Your anonymous desktop wallet is &lt;b&gt;encrypted&lt;/b&gt; and is currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
         <source>A fatal error occurred. Logos can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Logos can no longer continue safely and will quit.</translation>
+        <translation>A fatal error has occurred. The Logos anonymous desktop wallet application cannot continue securely and will quit. Please restart.</translation>
     </message>
 </context>
 <context>
@@ -694,7 +694,7 @@ Address: %4
     <message>
         <location filename="../clientmodel.cpp" line="+104"/>
         <source>Network Alert</source>
-        <translation>Network Alert</translation>
+        <translation>Network alert</translation>
     </message>
 </context>
 <context>
@@ -702,7 +702,7 @@ Address: %4
     <message>
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
-        <translation>Edit Address</translation>
+        <translation>Edit wallet address</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -712,7 +712,7 @@ Address: %4
     <message>
         <location line="+10"/>
         <source>The label associated with this address book entry</source>
-        <translation>The label associated with this address book entry</translation>
+        <translation>The label associated with this wallet address</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -722,47 +722,47 @@ Address: %4
     <message>
         <location line="+10"/>
         <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
-        <translation>The address associated with this address book entry. This can only be modified for sending addresses.</translation>
+        <translation>The wallet address can only be amended for your wallet addresses used for sending payments.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="+21"/>
         <source>New receiving address</source>
-        <translation>New receiving address</translation>
+        <translation>New wallet address</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>New sending address</source>
-        <translation>New sending address</translation>
+        <translation>Create a wallet address</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Edit receiving address</source>
-        <translation>Edit receiving address</translation>
+        <translation>Edit a counter-party's wallet address</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Edit sending address</source>
-        <translation>Edit sending address</translation>
+        <translation>Edit your wallet address</translation>
     </message>
     <message>
         <location line="+76"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>The entered address &quot;%1&quot; is already in the address book.</translation>
+        <translation>The wallet address &quot;%1&quot; is already in your counter-party wallet list.</translation>
     </message>
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Logos address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Logos address.</translation>
+        <translation>The wallet address &quot;%1&quot; is not a valid Logos wallet address.</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Could not unlock wallet.</source>
-        <translation>Could not unlock wallet.</translation>
+        <translation>The wallet could not be unlocked.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>New key generation failed.</source>
-        <translation>New key generation failed.</translation>
+        <translation>Your new wallet address generation failed.</translation>
     </message>
 </context>
 <context>
@@ -771,7 +771,7 @@ Address: %4
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>Logos-Qt</source>
-        <translation>Logos-Qt</translation>
+        <translation>Logos-QT</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -796,17 +796,17 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Set language, for example &quot;de_DE&quot; (default: system locale)</translation>
+        <translation>Set language, for example &quot;de_DE&quot; (default: English)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Start minimized</source>
-        <translation>Start minimized</translation>
+        <translation>Start minimised application</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Show splash screen on startup (default: 1)</translation>
+        <translation>Show splash screen on start-up (default: 1)</translation>
     </message>
 </context>
 <context>
@@ -824,37 +824,37 @@ Address: %4
     <message>
         <location line="+6"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</translation>
+        <translation>Optional transaction fee (per kB) to ensure your transactions are verified quickly. Most transactions are 1 kB.</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Pay transaction &amp;fee</source>
-        <translation>Pay transaction &amp;fee</translation>
+        <translation>Pay transaction verification &amp;fee</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>Automatically start Logos after logging in to the system.</source>
-        <translation>Automatically start Logos after logging in to the system.</translation>
+        <translation>Automatically start Logos anonymous desktop wallet application after logging in to your system.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start Logos on system login</source>
-        <translation>&amp;Start Logos on system login</translation>
+        <translation>&amp;Start Logos anonymous desktop wallet application on system login</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Reset all client options to default.</source>
-        <translation>Reset all client options to default.</translation>
+        <translation>Reset all client options to default</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Reset Options</translation>
+        <translation>&amp;Reset options</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Network</source>
-        <translation>&amp;Network</translation>
+        <translation>&amp;Transaction verification network</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -869,7 +869,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Connect to the Logos network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the Logos network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <translation>Connect to the Logos transaction verification network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -914,22 +914,22 @@ Address: %4
     <message>
         <location line="+6"/>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Show only a tray icon after minimizing the window.</translation>
+        <translation>Show tray icon after minimising the Logos anonymous desktop wallet application window.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimize to the tray instead of the taskbar</translation>
+        <translation>&amp;Minimise to the tray instead of the task bar</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</translation>
+        <translation>Minimise application instead of exiting when the window is closed. When this option is enabled, the application will be closed only after closing it down from the menu.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimize on close</translation>
+        <translation>M&amp;inimise on close</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -939,12 +939,12 @@ Address: %4
     <message>
         <location line="+8"/>
         <source>User Interface &amp;language:</source>
-        <translation>User Interface &amp;language:</translation>
+        <translation>Anonymous desktop wallet application &amp;language:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Logos.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Logos.</translation>
+        <translation>Change to the anonymous desktop application language. It will take effect after restarting the application.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -954,17 +954,17 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Choose the default subdivision unit to show in the interface and when sending coins.</translation>
+        <translation>Use the default Logos units in your anonymous desktop wallet and your payments</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Whether to show Logos addresses in the transaction list or not.</source>
-        <translation>Whether to show Logos addresses in the transaction list or not.</translation>
+        <translation>Show Logos wallet addresses in the payments and receipts</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Display addresses in transaction list</translation>
+        <translation>&amp;Display wallet addresses in payments and receipts</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -989,17 +989,17 @@ Address: %4
     <message>
         <location line="+130"/>
         <source>Confirm options reset</source>
-        <translation>Confirm options reset</translation>
+        <translation>Confirm reset</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Some settings may require a client restart to take effect.</source>
-        <translation>Some settings may require a client restart to take effect.</translation>
+        <translation>Some settings may require you to restart your anonymous desktop wallet application to take effect.</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Do you want to proceed?</source>
-        <translation>Do you want to proceed?</translation>
+        <translation>Do you wish to proceed?</translation>
     </message>
     <message>
         <location line="+42"/>
@@ -1011,12 +1011,12 @@ Address: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting Logos.</source>
-        <translation>This setting will take effect after restarting Logos.</translation>
+        <translation>This setting will take effect after restarting your anonymous desktop wallet application.</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>The supplied proxy address is invalid.</source>
-        <translation>The supplied proxy address is invalid.</translation>
+        <translation>The entered proxy address is invalid.</translation>
     </message>
 </context>
 <context>
@@ -1030,32 +1030,32 @@ Address: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Logos network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Logos network after a connection is established, but this process has not completed yet.</translation>
+        <translation>The displayed information may be out of date. Your anonymous desktop wallet automatically synchronises with the Logos transaction verification network after connection is established. This process is not yet complete.</translation>
     </message>
     <message>
         <location line="-124"/>
         <source>Balance:</source>
-        <translation>Balance:</translation>
+        <translation>Your Logos balance</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Unconfirmed:</source>
-        <translation>Unconfirmed:</translation>
+        <translation>Your pending transactions</translation>
     </message>
     <message>
         <location line="-78"/>
         <source>Wallet</source>
-        <translation>Wallet</translation>
+        <translation>Your Logos wallet</translation>
     </message>
     <message>
         <location line="+107"/>
         <source>Immature:</source>
-        <translation>Immature:</translation>
+        <translation>Yet to mature Logos</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Mined balance that has not yet matured</source>
-        <translation>Mined balance that has not yet matured</translation>
+        <translation>Your yet to mature Logos mining balance</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -1070,13 +1070,13 @@ Address: %4
     <message>
         <location line="+29"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</translation>
+        <translation>Total number of transactions that have yet to be verified and not yet include in your current balance</translation>
     </message>
     <message>
         <location filename="../overviewpage.cpp" line="+116"/>
         <location line="+1"/>
         <source>out of sync</source>
-        <translation>out of sync</translation>
+        <translation>Out of sync</translation>
     </message>
 </context>
 <context>
@@ -1084,7 +1084,7 @@ Address: %4
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start logos: click-to-pay handler</source>
-        <translation>Cannot start logos: click-to-pay handler</translation>
+        <translation>Cannot start Logos: please click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1092,57 +1092,57 @@ Address: %4
     <message>
         <location filename="../forms/qrcodedialog.ui" line="+14"/>
         <source>QR Code Dialog</source>
-        <translation>QR Code Dialog</translation>
+        <translation>QR code dialog</translation>
     </message>
     <message>
         <location line="+59"/>
         <source>Request Payment</source>
-        <translation>Request Payment</translation>
+        <translation>Request payment</translation>
     </message>
     <message>
         <location line="+56"/>
         <source>Amount:</source>
-        <translation>Amount:</translation>
+        <translation>Amount</translation>
     </message>
     <message>
         <location line="-44"/>
         <source>Label:</source>
-        <translation>Label:</translation>
+        <translation>Label</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Message:</source>
-        <translation>Message:</translation>
+        <translation>Message</translation>
     </message>
     <message>
         <location line="+71"/>
         <source>&amp;Save As...</source>
-        <translation>&amp;Save As...</translation>
+        <translation>&amp;Save as ...</translation>
     </message>
     <message>
         <location filename="../qrcodedialog.cpp" line="+62"/>
         <source>Error encoding URI into QR Code.</source>
-        <translation>Error encoding URI into QR Code.</translation>
+        <translation>Error encoding URI into QR code</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>The entered amount is invalid, please check.</source>
-        <translation>The entered amount is invalid, please check.</translation>
+        <translation>The amount entered is invalid, please check.</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Resulting URI too long, try to reduce the text for label / message.</translation>
+        <translation>The resulting URI too long, try to reduce the text for the label or message.</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Save QR Code</source>
-        <translation>Save QR Code</translation>
+        <translation>Save QR code</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>PNG Images (*.png)</source>
-        <translation>PNG Images (*.png)</translation>
+        <translation>PNG images (*.png)</translation>
     </message>
 </context>
 <context>
@@ -1150,7 +1150,7 @@ Address: %4
     <message>
         <location filename="../forms/rpcconsole.ui" line="+46"/>
         <source>Client name</source>
-        <translation>Client name</translation>
+        <translation>Application</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1169,7 +1169,7 @@ Address: %4
     <message>
         <location line="-217"/>
         <source>Client version</source>
-        <translation>Client version</translation>
+        <translation>Version</translation>
     </message>
     <message>
         <location line="-45"/>
@@ -1189,7 +1189,7 @@ Address: %4
     <message>
         <location line="+29"/>
         <source>Network</source>
-        <translation>Network</translation>
+        <translation>Logos transaction verification network</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1234,12 +1234,12 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Show the Logos-Qt help message to get a list with possible Logos command-line options.</source>
-        <translation>Show the Logos-Qt help message to get a list with possible Logos command-line options.</translation>
+        <translation>View help message for list of possible commands</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Show</source>
-        <translation>&amp;Show</translation>
+        <translation>&amp;View</translation>
     </message>
     <message>
         <location line="+24"/>
@@ -1254,12 +1254,12 @@ Address: %4
     <message>
         <location line="-104"/>
         <source>Logos - Debug window</source>
-        <translation>Logos - Debug window</translation>
+        <translation>Logos - debug window</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Logos Core</source>
-        <translation>Logos Core</translation>
+        <translation>Logos core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1269,7 +1269,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Open the Logos debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Logos debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <translation>Open the Logos debug log file in the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1279,12 +1279,12 @@ Address: %4
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the Logos RPC console.</source>
-        <translation>Welcome to the Logos RPC console.</translation>
+        <translation>Welcome to the Logos RPC console</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</translation>
+        <translation>Use up and down cursor keys to navigate history and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear the screen.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1304,7 +1304,7 @@ Address: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Send Coins</translation>
+        <translation>Send a Logos payment</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1314,7 +1314,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
-        <translation>Add &amp;Recipient</translation>
+        <translation>Add &amp;recipient</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1324,22 +1324,22 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Clear &amp;All</source>
-        <translation>Clear &amp;All</translation>
+        <translation>Clear &amp;all</translation>
     </message>
     <message>
         <location line="+22"/>
         <source>Balance:</source>
-        <translation>Balance:</translation>
+        <translation>Your Logos balance</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <translation>LGS 123.45</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>Confirm the send action</source>
-        <translation>Confirm the send action</translation>
+        <translation>Confirm your transfer</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1354,12 +1354,12 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Confirm send coins</translation>
+        <translation>Confirm Logos transfer</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Are you sure you want to send %1?</source>
-        <translation>Are you sure you want to send %1?</translation>
+        <translation>Are you sure you want to transfer %1?</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1369,37 +1369,37 @@ Address: %4
     <message>
         <location line="+23"/>
         <source>The recipient address is not valid, please recheck.</source>
-        <translation>The recipient address is not valid, please recheck.</translation>
+        <translation>The recipient's wallet address is not valid, please verify.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>The amount to pay must be larger than 0.</translation>
+        <translation>The transfer amount cannot be 0</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>The amount exceeds your balance.</source>
-        <translation>The amount exceeds your balance.</translation>
+        <translation>The transfer amount exceeds your available balance.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>The total exceeds your balance when the %1 transaction fee is included.</translation>
+        <translation>The total transfer amount exceeds your available balance when the %1 transaction fee is included.</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Duplicate address found, can only send to each address once per send operation.</translation>
+        <translation>You are trying to make a transfer more than once to the same wallet address. You can only make a transfer to specific wallet once per transfer operation.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Error: Transaction creation failed!</source>
-        <translation>Error: Transaction creation failed!</translation>
+        <translation>Error - the transaction creation has failed</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
+        <translation>Error - the transaction was rejected. This might happen if some of the Logos in your wallet were already spent. This can happen if you used a copy of wallet.dat and Logos were spent in the copy but not marked as spent in your anonymous desktop wallet.</translation>
     </message>
 </context>
 <context>
@@ -1417,18 +1417,18 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>Pay &amp;To:</source>
-        <translation>Pay &amp;To:</translation>
+        <translation>Transfer &amp;to:</translation>
     </message>
     <message>
         <location line="+34"/>
         <source>The address to send the payment to (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</source>
-        <translation>The address to send the payment to (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
+        <translation>The recipient's wallet address(e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
     </message>
     <message>
         <location line="+60"/>
         <location filename="../sendcoinsentry.cpp" line="+26"/>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>Enter a label for this address to add it to your address book</translation>
+        <translation>Enter a label for this wallet address to add it to your counter-party wallet address list</translation>
     </message>
     <message>
         <location line="-78"/>
@@ -1438,7 +1438,7 @@ Address: %4
     <message>
         <location line="+28"/>
         <source>Choose address from address book</source>
-        <translation>Choose address from address book</translation>
+        <translation>Choose wallet address from your counter-party wallet address list</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1448,7 +1448,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Paste address from clipboard</source>
-        <translation>Paste address from clipboard</translation>
+        <translation>Paste wallet address from clipboard</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1458,12 +1458,12 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Remove this recipient</source>
-        <translation>Remove this recipient</translation>
+        <translation>Delete this recipient's wallet address</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Logos address (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</source>
-        <translation>Enter a Logos address (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
+        <translation>Enter a Logos wallet address (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
     </message>
 </context>
 <context>
@@ -1471,28 +1471,28 @@ Address: %4
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signatures - Sign / Verify a Message</translation>
+        <translation>Signatures - sign or verify a message</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Sign Message</source>
-        <translation>&amp;Sign Message</translation>
+        <translation>&amp;Sign message</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
+        <translation>You can sign messages with your wallet addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements to which you agree.</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</source>
-        <translation>The address to sign the message with (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
+        <translation>Enter the wallet address with which to sign your message (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
     </message>
     <message>
         <location line="+10"/>
         <location line="+213"/>
         <source>Choose an address from the address book</source>
-        <translation>Choose an address from the address book</translation>
+        <translation>Choose a wallet address from the counter-party wallet address list</translation>
     </message>
     <message>
         <location line="-203"/>
@@ -1503,7 +1503,7 @@ Address: %4
     <message>
         <location line="-203"/>
         <source>Paste address from clipboard</source>
-        <translation>Paste address from clipboard</translation>
+        <translation>Paste the wallet address from the clipboard</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1513,63 +1513,63 @@ Address: %4
     <message>
         <location line="+12"/>
         <source>Enter the message you want to sign here</source>
-        <translation>Enter the message you want to sign here</translation>
+        <translation>Your signature message</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Signature</source>
-        <translation>Signature</translation>
+        <translation>Your signature</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Copy the current signature to the system clipboard</translation>
+        <translation>Copy the current message signature to the system clipboard</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this Logos address</source>
-        <translation>Sign the message to prove you own this Logos address</translation>
+        <translation>Sign the message to prove you own this Logos wallet address</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
-        <translation>Sign &amp;Message</translation>
+        <translation>Sign &amp;message</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Reset all sign message fields</source>
-        <translation>Reset all sign message fields</translation>
+        <translation>Reset all signature message fields</translation>
     </message>
     <message>
         <location line="+3"/>
         <location line="+146"/>
         <source>Clear &amp;All</source>
-        <translation>Clear &amp;All</translation>
+        <translation>Clear &amp;all</translation>
     </message>
     <message>
         <location line="-87"/>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Verify Message</translation>
+        <translation>&amp;Verify message</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</translation>
+        <translation>Enter the signature wallet address, signature message (ensuring you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself to avoid being tricked by a so-called man-in-the-middle attack.</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</source>
-        <translation>The address the message was signed with (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
+        <translation>The wallet address with which the message was signed (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified Logos address</source>
-        <translation>Verify the message to ensure it was signed with the specified Logos address</translation>
+        <translation>Verify the message to ensure it was signed with the specified Logos wallet address</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Verify &amp;Message</source>
-        <translation>Verify &amp;Message</translation>
+        <translation>Verify &amp;message</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -1580,12 +1580,12 @@ Address: %4
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
         <source>Enter a Logos address (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</source>
-        <translation>Enter a Logos address (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
+        <translation>Enter a Logos wallet address (e.g. VsPMGuDYWdibQQ1Hbwpbq3pDHmGY12F2wd)</translation>
     </message>
     <message>
         <location line="-2"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Click &quot;Sign Message&quot; to generate signature</translation>
+        <translation>Click &quot;Sign message&quot; to generate a signature</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1596,7 +1596,7 @@ Address: %4
         <location line="+82"/>
         <location line="+81"/>
         <source>The entered address is invalid.</source>
-        <translation>The entered address is invalid.</translation>
+        <translation>The entered wallet address is invalid.</translation>
     </message>
     <message>
         <location line="-81"/>
@@ -1604,59 +1604,59 @@ Address: %4
         <location line="+73"/>
         <location line="+8"/>
         <source>Please check the address and try again.</source>
-        <translation>Please check the address and try again.</translation>
+        <translation>Please check the wallet address and try again.</translation>
     </message>
     <message>
         <location line="-81"/>
         <location line="+81"/>
         <source>The entered address does not refer to a key.</source>
-        <translation>The entered address does not refer to a key.</translation>
+        <translation>The entered wallet address does not refer to a key.</translation>
     </message>
     <message>
         <location line="-73"/>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Wallet unlock was cancelled.</translation>
+        <translation>The unlocking of the wallet was cancelled.</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Private key for the entered address is not available.</source>
-        <translation>Private key for the entered address is not available.</translation>
+        <translation>The private key for the wallet address is not available.</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Message signing failed.</source>
-        <translation>Message signing failed.</translation>
+        <translation>Message signing failed</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Message signed.</source>
-        <translation>Message signed.</translation>
+        <translation>Message signed</translation>
     </message>
     <message>
         <location line="+59"/>
         <source>The signature could not be decoded.</source>
-        <translation>The signature could not be decoded.</translation>
+        <translation>The signature could not be decoded</translation>
     </message>
     <message>
         <location line="+0"/>
         <location line="+13"/>
         <source>Please check the signature and try again.</source>
-        <translation>Please check the signature and try again.</translation>
+        <translation>Please check the signature and try again</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The signature did not match the message digest.</source>
-        <translation>The signature did not match the message digest.</translation>
+        <translation>The signature did not match the message digest</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Message verification failed.</source>
-        <translation>Message verification failed.</translation>
+        <translation>Message verification failed</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Message verified.</source>
-        <translation>Message verified.</translation>
+        <translation>Message verified</translation>
     </message>
 </context>
 <context>
@@ -1664,7 +1664,7 @@ Address: %4
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
         <source>The Logos developers</source>
-        <translation>The Logos developers</translation>
+        <translation>Logos developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1739,7 +1739,7 @@ Address: %4
         <location line="-77"/>
         <location line="+2"/>
         <source>own address</source>
-        <translation>own address</translation>
+        <translation>own wallet address</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1804,7 +1804,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</translation>
+        <translation>The generated Logos must mature for 120 blocks before they can be spent. When you generated this block, it was broadcast to the transaction verification network to be added to the block chain. If it fails to be added to the block chain, its state will change to &quot;not accepted&quot; and you will not have access to the funds. This may occasionally happen if another node generates a block within a few seconds of your node.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1922,14 +1922,14 @@ Address: %4
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
         <translation>
-            <numerusform>Mined balance will be available when it matures in %n more block</numerusform>
-            <numerusform>Mined balance will be available when it matures in %n more blocks</numerusform>
+            <numerusform>Your mining balance will be available when it matures in %n block</numerusform>
+            <numerusform>Your mining balance will be available when it matures in %n blocks</numerusform>
         </translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>This block was not received by any other nodes and will probably not be accepted!</translation>
+        <source>This block was not received by any other nodes and will probably not be accepted</source>
+        <translation>This block was not received by any other nodes and will probably not be accepted</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1939,7 +1939,7 @@ Address: %4
     <message>
         <location line="+43"/>
         <source>Received with</source>
-        <translation>Received with</translation>
+        <translation>Received in</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1954,7 +1954,7 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>Payment to yourself</source>
-        <translation>Payment to yourself</translation>
+        <translation>Transfer to yourself</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1969,27 +1969,27 @@ Address: %4
     <message>
         <location line="+199"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Transaction status. Hover over this field to show number of confirmations.</translation>
+        <translation>Transaction status. Hover over this field to show the number of confirmations.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Date and time that the transaction was received.</source>
-        <translation>Date and time that the transaction was received.</translation>
+        <translation>Date and time of transaction receipt</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Type of transaction.</source>
-        <translation>Type of transaction.</translation>
+        <translation>Transaction type</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Destination address of transaction.</source>
-        <translation>Destination address of transaction.</translation>
+        <translation>Transaction destination wallet address</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Amount removed from or added to balance.</source>
-        <translation>Amount removed from or added to balance.</translation>
+        <translation>Amount subtracted from or added to your balance</translation>
     </message>
 </context>
 <context>
@@ -2028,12 +2028,12 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Range...</source>
-        <translation>Range...</translation>
+        <translation>Range</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Received with</source>
-        <translation>Received with</translation>
+        <translation>Received in</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2058,17 +2058,17 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Enter address or label to search</source>
-        <translation>Enter address or label to search</translation>
+        <translation>Enter a wallet address or label to search</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Min amount</source>
-        <translation>Min amount</translation>
+        <translation>Minimum amount</translation>
     </message>
     <message>
         <location line="+34"/>
         <source>Copy address</source>
-        <translation>Copy address</translation>
+        <translation>Copy wallet address</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2098,12 +2098,12 @@ Address: %4
     <message>
         <location line="+139"/>
         <source>Export Transaction Data</source>
-        <translation>Export Transaction Data</translation>
+        <translation>Export transaction data</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>Comma separated file (*.csv)</translation>
+        <translation>Comma separated value file (*.csv)</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2153,7 +2153,7 @@ Address: %4
     <message>
         <location line="+100"/>
         <source>Range:</source>
-        <translation>Range:</translation>
+        <translation>Range</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2166,7 +2166,7 @@ Address: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Send Coins</translation>
+        <translation>Send Logos</translation>
     </message>
 </context>
 <context>
@@ -2179,37 +2179,37 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Export the data in the current tab to a file</source>
-        <translation>Export the data in the current tab to a file</translation>
+        <translation>Export the data in the current tab to file</translation>
     </message>
     <message>
         <location line="+193"/>
         <source>Backup Wallet</source>
-        <translation>Backup Wallet</translation>
+        <translation>Backup your anonymous desktop wallet</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (*.dat)</translation>
+        <translation>Wallet data (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation>Backup Failed</translation>
+        <translation>Backup failed</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation>There was an error trying to save the wallet data to the new location.</translation>
+        <translation>There was an error trying to save your anonymous desktop wallet data to the new location</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Backup Successful</source>
-        <translation>Backup Successful</translation>
+        <translation>Backup successful</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The wallet data was successfully saved to the new location.</source>
-        <translation>The wallet data was successfully saved to the new location.</translation>
+        <translation>The anonymous desktop wallet data was successfully saved to the new location</translation>
     </message>
 </context>
 <context>
@@ -2222,7 +2222,7 @@ Address: %4
     <message>
         <location line="+102"/>
         <source>Usage:</source>
-        <translation>Usage:</translation>
+        <translation>Usage</translation>
     </message>
     <message>
         <location line="-29"/>
@@ -2242,7 +2242,7 @@ Address: %4
     <message>
         <location line="+24"/>
         <source>Options:</source>
-        <translation>Options:</translation>
+        <translation>Options</translation>
     </message>
     <message>
         <location line="+24"/>
@@ -2262,7 +2262,7 @@ Address: %4
     <message>
         <location line="-9"/>
         <source>Set database cache size in megabytes (default: 25)</source>
-        <translation>Set database cache size in megabytes (default: 25)</translation>
+        <translation>Set database cache size, in megabytes (default: 25)</translation>
     </message>
     <message>
         <location line="-28"/>
@@ -2328,24 +2328,24 @@ Address: %4
         <location line="-80"/>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
+It is recommended you use the following random secure password:
 rpcuser=logosrpc
 rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
+(you do not need to remember this secure password)
+Your user-name and secure password must not be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
+It is also recommended to set alertnotify so you are notified of any problems;
 for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.com
 </source>
         <translation>%s, you must set a rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
+It is recommended you use the following random secure password:
 rpcuser=logosrpc
 rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
+(you do not need to remember this secure password)
+The user-name and password must not be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
+It is also recommended to set alertnotify so you are notified of any problems;
 for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.com
 </translation>
     </message>
@@ -2367,12 +2367,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
+        <translation>Error: The transaction was rejected - this might happen if some of the Logos in your anonymous desktop wallet were already spent, such as if you used a copy of wallet.dat and Logos were spent in the copy but not marked as spent in your anonymous desktop wallet.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</translation>
+        <translation>Error: This transaction requires a transaction fee of at least %s because of the transfer amount, complexity, or use of recently received funds</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2397,27 +2397,27 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+5"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
+        <translation>Warning: -paytxfee is set very high - this is the transaction fee you will pay if you send a transaction</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</translation>
+        <translation>Warning: Displayed transactions may not be correct - You may need to upgrade, or other nodes may need to upgrade</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Logos will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Logos will not work properly.</translation>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct - If your clock is wrong Logos-QT will not work properly</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</translation>
+        <translation>Warning: error reading wallet.dat - all keys read correctly, however transaction data or counter-party wallet addresses might be missing or incorrect in your list</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</translation>
+        <translation>Warning: wallet.dat corrupt, data salvaged - original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup file</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2427,7 +2427,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+2"/>
         <source>Block creation options:</source>
-        <translation>Block creation options:</translation>
+        <translation>Block creation options</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2472,17 +2472,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+2"/>
         <source>Error: Disk space is low!</source>
-        <translation>Error: Disk space is low!</translation>
+        <translation>Error: disk space is low</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Error: Wallet locked, unable to create transaction!</translation>
+        <translation>Error: anonymous desktop wallet locked, unable to transfer</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: system error: </source>
-        <translation>Error: system error: </translation>
+        <translation>System error </translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2527,7 +2527,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation>Failed to write to coin database</translation>
+        <translation>Failed to write to Logos database</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2547,7 +2547,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
-        <translation>Generate coins (default: 0)</translation>
+        <translation>Generate Logos (default: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2557,12 +2557,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+1"/>
         <source>How thorough the block verification is (0-4, default: 3)</source>
-        <translation>How thorough the block verification is (0-4, default: 3)</translation>
+        <translation>Block verification thoroughness (0-4, default: 3)</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Not enough file descriptors available.</source>
-        <translation>Not enough file descriptors available.</translation>
+        <translation>Not enough file descriptors available</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2577,12 +2577,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+26"/>
         <source>Verifying blocks...</source>
-        <translation>Verifying blocks...</translation>
+        <translation>Verifying blocks</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Verifying wallet...</source>
-        <translation>Verifying wallet...</translation>
+        <translation>Verifying wallet</translation>
     </message>
     <message>
         <location line="-69"/>
@@ -2652,7 +2652,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+2"/>
         <source>Prepend debug output with timestamp</source>
-        <translation>Prepend debug output with timestamp</translation>
+        <translation>Include time stamp with debug output</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2692,7 +2692,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+1"/>
         <source>Signing transaction failed</source>
-        <translation>Signing transaction failed</translation>
+        <translation>Transaction signature failed</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2702,7 +2702,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+4"/>
         <source>System error: </source>
-        <translation>System error: </translation>
+        <translation>System error </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2747,7 +2747,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+1"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Warning: This version is obsolete, upgrade required!</translation>
+        <translation>Warning - this version is out of date, please upgrade</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2782,7 +2782,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+147"/>
         <source>Upgrade wallet to latest format</source>
-        <translation>Upgrade wallet to latest format</translation>
+        <translation>Upgrade anonymous desktop wallet to latest format</translation>
     </message>
     <message>
         <location line="-21"/>
@@ -2837,22 +2837,22 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+55"/>
         <source>Loading addresses...</source>
-        <translation>Loading addresses...</translation>
+        <translation>Loading addresses</translation>
     </message>
     <message>
         <location line="-35"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Error loading wallet.dat: Wallet corrupted</translation>
+        <translation>Error loading wallet.dat - anonymous desktop wallet corrupted</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat: Wallet requires newer version of Logos</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Logos</translation>
+        <translation>Error loading wallet.dat - anonymous desktop wallet requires newer version of Logos-QT</translation>
     </message>
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart Logos to complete</source>
-        <translation>Wallet needed to be rewritten: restart Logos to complete</translation>
+        <translation>Anonymous desktop wallet needed to be rewritten - please restart Logos-QT to complete</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2902,7 +2902,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+10"/>
         <source>Loading block index...</source>
-        <translation>Loading block index...</translation>
+        <translation>Loading block index</translation>
     </message>
     <message>
         <location line="-57"/>
@@ -2912,7 +2912,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. Logos is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Logos is probably already running.</translation>
+        <translation>Unable to bind to %s on this computer - Logos anonymous desktop wallet application is probably already running</translation>
     </message>
     <message>
         <location line="+64"/>
@@ -2922,27 +2922,27 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     <message>
         <location line="+19"/>
         <source>Loading wallet...</source>
-        <translation>Loading wallet...</translation>
+        <translation>Loading anonymous desktop wallet</translation>
     </message>
     <message>
         <location line="-52"/>
         <source>Cannot downgrade wallet</source>
-        <translation>Cannot downgrade wallet</translation>
+        <translation>Cannot downgrade anonymous desktop wallet</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Cannot write default address</source>
-        <translation>Cannot write default address</translation>
+        <translation>Cannot write default wallet address</translation>
     </message>
     <message>
         <location line="+64"/>
         <source>Rescanning...</source>
-        <translation>Rescanning...</translation>
+        <translation>Rescanning</translation>
     </message>
     <message>
         <location line="-57"/>
         <source>Done loading</source>
-        <translation>Done loading</translation>
+        <translation>Loading complete</translation>
     </message>
     <message>
         <location line="+82"/>
