@@ -114,7 +114,7 @@ QString BitcoinUnits::format(int unit, qint64 n, bool fPlus)
 
 QString BitcoinUnits::formatWithUnit(int unit, qint64 amount, bool plussign)
 {
-    return format(unit, amount, plussign) + QString(" ") + name(unit);
+    return name(unit) + QString(" ") + format(unit, amount, plussign) ;
 }
 
 bool BitcoinUnits::parse(int unit, const QString &value, qint64 *val_out)
