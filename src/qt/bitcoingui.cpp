@@ -149,6 +149,14 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 
     // Initially wallet actions should be disabled
     setWalletActionsEnabled(false);
+
+    //Global style
+    setStyleSheet("selection-color: rgb(41,129,186);"
+                  "QMainWindow {"
+                    "background-image: url(:/images/background);"
+                    "background-repeat: no;"
+                  "}");
+
 }
 
 BitcoinGUI::~BitcoinGUI()
@@ -201,6 +209,20 @@ void BitcoinGUI::createActions()
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
     tabGroup->addAction(addressBookAction);
 
+    startMiningAction = new QAction(QIcon(":/icons/mining"), tr("Start &Mining"), this);
+    startMiningAction->setStatusTip(tr("Click to visit website"));
+    startMiningAction->setToolTip(startMiningAction->statusTip());
+    startMiningAction->setCheckable(true);
+    startMiningAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
+    tabGroup->addAction(startMiningAction);
+
+    FAQAction = new QAction(QIcon(":/icons/faq"), tr("Frequently asked questions"), this);
+    FAQAction->setStatusTip(tr("Click to visit website"));
+    FAQAction->setToolTip(FAQAction->statusTip());
+    FAQAction->setCheckable(true);
+    FAQAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
+    tabGroup->addAction(FAQAction);
+
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -211,6 +233,8 @@ void BitcoinGUI::createActions()
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
+    connect(startMiningAction, SIGNAL(triggered()), this, SLOT(gotoMiningWebsite()));
+    connect(FAQAction, SIGNAL(triggered()), this, SLOT(gotoFAQWebsite()));
 
     quitAction = new QAction(QIcon(":/icons/quit"), tr("E&xit"), this);
     quitAction->setStatusTip(tr("Quit application"));
@@ -295,6 +319,14 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
+    toolbar->addAction(startMiningAction);
+    toolbar->addAction(FAQAction);
+    //toolbar->setAutoFillBackground(true);
+    //toolbar->setStyleSheet("QToolBar {background-color: rgb(41,129,186); color:white; border:0;}");
+    //toolbar->setIconSize(QSize(48,48));
+    //toolbar->setContentsMargins(0,0,0,0);
+    //toolbar->setBaseSize(950,100);
+    //toolbar->setMinimumHeight(100);
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)
@@ -371,6 +403,8 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
     signMessageAction->setEnabled(enabled);
     verifyMessageAction->setEnabled(enabled);
     addressBookAction->setEnabled(enabled);
+    startMiningAction->setEnabled(enabled);
+    //FAQAction->setEnabled(disabled);
 }
 
 void BitcoinGUI::createTrayIcon()
@@ -485,6 +519,16 @@ void BitcoinGUI::gotoHistoryPage()
 void BitcoinGUI::gotoAddressBookPage()
 {
     if (walletFrame) walletFrame->gotoAddressBookPage();
+}
+
+void BitcoinGUI::gotoMiningWebsite()
+{
+    QDesktopServices::openUrl(QUrl("http://www.logosmining.com"));
+}
+
+void BitcoinGUI::gotoFAQWebsite()
+{
+    QDesktopServices::openUrl(QUrl("http://www.logoscoin.org/faq"));
 }
 
 void BitcoinGUI::gotoReceiveCoinsPage()

@@ -746,13 +746,13 @@ Address: %4
     </message>
     <message>
         <location line="+76"/>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>The wallet address &quot;%1&quot; is already in your counter-party wallet list.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>The wallet address "%1" is already in your counter-party wallet list.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Logos address.</source>
-        <translation>The wallet address &quot;%1&quot; is not a valid Logos wallet address.</translation>
+        <source>The entered address "%1" is not a valid Logos address.</source>
+        <translation>The wallet address "%1" is not a valid Logos wallet address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -795,8 +795,8 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Set language, for example &quot;de_DE&quot; (default: English)</translation>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Set language, for example "de_DE" (default: English)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1584,8 +1584,8 @@ Address: %4
     </message>
     <message>
         <location line="-2"/>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Click &quot;Sign message&quot; to generate a signature</translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Click "Sign message" to generate a signature</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1803,8 +1803,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>The generated Logos must mature for 120 blocks before they can be spent. When you generated this block, it was broadcast to the transaction verification network to be added to the block chain. If it fails to be added to the block chain, its state will change to &quot;not accepted&quot; and you will not have access to the funds. This may occasionally happen if another node generates a block within a few seconds of your node.</translation>
+        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>The generated Logos must mature for 120 blocks before they can be spent. When you generated this block, it was broadcast to the transaction verification network to be added to the block chain. If it fails to be added to the block chain, its state will change to "not accepted" and you will not have access to the funds. This may occasionally happen if another node generates a block within a few seconds of your node.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2335,7 +2335,7 @@ rpcpassword=%s
 Your user-name and secure password must not be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of any problems;
-for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Logos Alert" admin@foo.com
 </source>
         <translation>%s, you must set a rpcpassword in the configuration file:
 %s
@@ -2346,7 +2346,7 @@ rpcpassword=%s
 The user-name and password must not be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of any problems;
-for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Logos Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -2406,8 +2406,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Logos will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct - If your clock is wrong Logos-QT will not work properly</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Logos will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct - If your clock is wrong Logos-QT will not work properly</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2601,18 +2601,18 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation>Invalid -tor address: &apos;%s&apos;</translation>
+        <source>Invalid -tor address: '%s'</source>
+        <translation>Invalid -tor address: '%s'</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2861,13 +2861,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+28"/>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Invalid -proxy address: &apos;%s&apos;</translation>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Invalid -proxy address: '%s'</translation>
     </message>
     <message>
         <location line="+56"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Unknown network specified in -onlynet: &apos;%s&apos;</translation>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Unknown network specified in -onlynet: '%s'</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2876,18 +2876,18 @@ for example: alertnotify=echo %%s | mail -s &quot;Logos Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="-96"/>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Cannot resolve -bind address: &apos;%s&apos;</translation>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Cannot resolve -bind address: '%s'</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Cannot resolve -externalip address: &apos;%s&apos;</translation>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Cannot resolve -externalip address: '%s'</translation>
     </message>
     <message>
         <location line="+44"/>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <location line="+1"/>

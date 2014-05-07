@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QSystemTrayIcon>
 #include <QMap>
+#include <QDesktopServices>
 
 class TransactionTableModel;
 class WalletFrame;
@@ -65,6 +66,8 @@ public:
     QAction * getOverviewAction() { return overviewAction; }
     QAction * getHistoryAction() { return historyAction; }
     QAction * getAddressBookAction() { return addressBookAction; }
+    QAction * getstartMiningAction() { return startMiningAction; }
+    QAction * getFAQAction() { return FAQAction; }
     QAction * getReceiveCoinsAction() { return receiveCoinsAction; }
     QAction * getSendCoinsAction() { return sendCoinsAction; }
 
@@ -91,6 +94,8 @@ private:
     QAction *quitAction;
     QAction *sendCoinsAction;
     QAction *addressBookAction;
+    QAction *startMiningAction;
+    QAction *FAQAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
     QAction *aboutAction;
@@ -171,6 +176,10 @@ private slots:
     void gotoAddressBookPage();
     /** Switch to receive coins page */
     void gotoReceiveCoinsPage();
+    /** Open Mining website in default browser */
+    void gotoMiningWebsite();
+    /** Open FAQ website in default browser */
+    void gotoFAQWebsite();
     /** Switch to send coins page */
     void gotoSendCoinsPage(QString addr = "");
 
