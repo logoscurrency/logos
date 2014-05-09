@@ -183,3 +183,7 @@ Other commands:
     ./logosd --help  # for a list of command-line options.
     ./logosd -daemon # to start the logos daemon.
     ./logosd help    # When the daemon is running, to get a list of RPC commands
+
+Release
+------
+https://cryptocointalk.com/topic/2966-bitcoin-scrypt-v120-source-code-and-compile-instructions-for-linux-windows-and-mac/
