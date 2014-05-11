@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x9bb31f2dec1458c6d90b958fdbb960a2a0b7c7b64aecf588e635ef3ee085460d");
+uint256 hashGenesisBlock("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Logos: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -1099,13 +1099,27 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
     int64 nSubsidy;
 
-    if ( nHeight == 1 ) {
-	nSubsidy = 250000000000 * COIN;
-    }else{
+    if ( nHeight > 982080 ) {
 	nSubsidy = 50000 * COIN;
+    } else if ( nHeight > 852480 ) {
+	nSubsidy = 45000 * COIN;
+    } else if ( nHeight > 721440 ) {
+        nSubsidy = 40000 * COIN;
+    } else if ( nHeight > 590400 ) {
+        nSubsidy = 35000 * COIN;
+    } else if ( nHeight > 460800 ) {
+        nSubsidy = 30000 * COIN;
+    } else if ( nHeight > 332640 ) {
+        nSubsidy = 25000 * COIN;
+    } else if ( nHeight > 201600 ) {
+        nSubsidy = 20000 * COIN;
+    } else if ( nHeight > 70560 ) {
+        nSubsidy = 12000 * COIN;
+    } else if ( nHeight > 1 ) {
+        nSubsidy = 10000 * COIN;
+    } else {
+        nSubsidy = 1770000000000 * COIN;
     }
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 840000); // Logos: 840k blocks in ~4 years
 
     return nSubsidy + nFees;
 }
@@ -1282,7 +1296,7 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
 // Using KGW
 unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
-        static const int64        BlocksTargetSpacing                        = 2.5 * 60; // 2.5 minutes
+        static const int64        BlocksTargetSpacing                        = 1 * 60; // 2.5 minutes
         unsigned int                TimeDaySeconds                                = 60 * 60 * 24;
         int64                                PastSecondsMin                                = TimeDaySeconds * 0.25;
         int64                                PastSecondsMax                                = TimeDaySeconds * 7;
@@ -2878,15 +2892,6 @@ bool LoadBlockIndex()
 {
     if (fTestNet)
     {
-        /*2014-01-08 17:06:16 block.nTime = 1389171600 
-        2014-01-08 17:06:16 block.nNonce = 5706611 
-        2014-01-08 17:06:16 block.GetHash = 03d493b7a75087b9d06a65ce0c0d8b24ca87333e0360a728d023eb0c8cf48e36
-        2014-01-08 17:06:16 CBlock(hash=03d493b7a75087b9d06a65ce0c0d8b24ca87333e0360a728d023eb0c8cf48e36, input=010000000000000000000000000000000000000000000000000000000000000000000000a25975432fe0326f68d92f3f576e016871195ef828f3b23e5a7faeb672fc73b29013cd52f0ff0f1e73135700, PoW=0000062027f1f5725d81942ddbd14e5664422eb2be006410aee59cfc0efa55d2, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=b273fc72b6ae7f5a3eb2f328f85e197168016e573f2fd9686f32e02f437559a2, nTime=1389171600, nBits=1e0ffff0, nNonce=5706611, vtx=1)
-        2014-01-08 17:06:16   CTransaction(hash=b273fc72b6ae7f5a3eb2f328f85e197168016e573f2fd9686f32e02f437559a2, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-            CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 0002e7034830312f30382f3138333520e280932054484520554e4954454420535441544553204e4154494f4e414c2044454254204953205a45524f20464f5220544845204f4e4c592054494d45)
-            CTxOut(error)
-        vMerkleTree: b273fc72b6ae7f5a3eb2f328f85e197168016e573f2fd9686f32e02f437559a2*/
-        
         /*pchMessageStart[0] = 0xfc;
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
@@ -2895,8 +2900,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 'o';
         pchMessageStart[2] = 'g';
         pchMessageStart[3] = 'o';
-        hashGenesisBlock = uint256("0xb514472cb1b84e6e8b34ff4ac15d2db9114f766e610b5c8091717d5e6a74820e");
-        //hashGenesisBlock = uint256("0xf5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f");
+        hashGenesisBlock = uint256("0xe");
     }
 
     //
@@ -2926,9 +2930,9 @@ bool InitBlockIndex() {
         // Genesis block
         if (fTestNet)
         {
-        	pszTimestamp = "Say Hello to Logos";
+        	pszTimestamp = "Say Hello to Logos ";
 	} else {
-        	pszTimestamp = "Say Hello to Logos we are live";
+        	pszTimestamp = "Say Hello to Logos we are live ";
 	}
         CTransaction txNew;
         txNew.vin.resize(1);
@@ -2944,13 +2948,13 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nBits    = 0x1e0ffff0;
         block.nNonce = 6951820;
-        block.nTime = 1397694736;
+        block.nTime = 1399802140;
         
         if (fTestNet)
         {
 
             block.nNonce = 13012655;
-            block.nTime = 1397686205;
+            block.nTime = 1399802140;
         }
 
         //// debug print
@@ -2961,11 +2965,11 @@ bool InitBlockIndex() {
 
         if (fTestNet)
         {
-        	assert(block.hashMerkleRoot == uint256("0xfbea2fe03049995cb2cf62e2584190a4bb3b0afc116b066803137858c373a029"));
-	} else {
-        	assert(block.hashMerkleRoot == uint256("0xf3064497f44e8e8b13c8f232062d32d226b4ae40d795b7d6410d25c99a57ef37"));
-	}
-        if (true &&block.GetHash() != hashGenesisBlock)
+        	assert(block.hashMerkleRoot == uint256("0x"));
+        } else {
+        	assert(block.hashMerkleRoot == uint256("0x"));
+        }
+        if (false &&block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
@@ -3271,7 +3275,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xeb, 0xd2, 0xd6, 0xcb }; // Logos
+unsigned char pchMessageStart[4] = { 0xec, 0xd5, 0xd6, 0xcb }; // Logos
 
 
 void static ProcessGetData(CNode* pfrom)

@@ -15,10 +15,10 @@ BitcoinAmountField::BitcoinAmountField(QWidget *parent):
 {
     amount = new QDoubleSpinBox(this);
     amount->setLocale(QLocale::c());
-    amount->setDecimals(8);
+    amount->setDecimals(2);
     amount->installEventFilter(this);
     amount->setMaximumWidth(170);
-    amount->setSingleStep(0.001);
+    amount->setSingleStep(0.01);
 
     QHBoxLayout *layout = new QHBoxLayout(this);
     layout->addWidget(amount);
@@ -145,10 +145,13 @@ void BitcoinAmountField::unitChanged(int idx)
     amount->setDecimals(BitcoinUnits::decimals(currentUnit));
     amount->setMaximum(qPow(10, BitcoinUnits::amountDigits(currentUnit)) - qPow(10, -amount->decimals()));
 
-    if(currentUnit == BitcoinUnits::uBTC)
-        amount->setSingleStep(0.01);
-    else
-        amount->setSingleStep(0.001);
+//    if(currentUnit == BitcoinUnits::uBTC) {
+        amount->setSingleStep(1);
+//    } else if(currentUnit == BitcoinUnits::kBTC) {
+//        amount->setSingleStep(1000.00);
+//    } else {
+//        amount->setSingleStep(1.00);
+//    }
 
     if(valid)
     {
