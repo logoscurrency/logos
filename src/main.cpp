@@ -2900,7 +2900,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 'o';
         pchMessageStart[2] = 'g';
         pchMessageStart[3] = 'o';
-        hashGenesisBlock = uint256("0xe");
+        hashGenesisBlock = uint256("0x98aa5dd60a80b3d96666a1ca2f4303a0c08ae150607439de0c4c094808d05b5a");
     }
 
     //
@@ -2953,7 +2953,7 @@ bool InitBlockIndex() {
         if (fTestNet)
         {
 
-            block.nNonce = 13012655;
+            block.nNonce = 13878902;
             block.nTime = 1399802140;
         }
 
@@ -2965,7 +2965,7 @@ bool InitBlockIndex() {
 
         if (fTestNet)
         {
-        	assert(block.hashMerkleRoot == uint256("0x"));
+        	assert(block.hashMerkleRoot == uint256("0x2b1279c6527b21f0c30520b5caf2f9d43ab8a346bc190d90f03b93c659350f2d"));
         } else {
         	assert(block.hashMerkleRoot == uint256("0x"));
         }
