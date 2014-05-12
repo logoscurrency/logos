@@ -76,6 +76,9 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 #else
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
+#endif
+
+#ifdef Q_OS_WIN
     showFullScreen();
 #endif
     // Create wallet frame and make it the central widget
