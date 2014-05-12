@@ -79,7 +79,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 #endif
 
 #ifdef Q_OS_WIN
-    showFullScreen();
+    showMaximized();
 #endif
     // Create wallet frame and make it the central widget
     walletFrame = new WalletFrame(this);
