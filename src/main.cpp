@@ -1100,9 +1100,9 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     int64 nSubsidy;
 
     if ( nHeight > 982080 ) {
-	nSubsidy = 50000 * COIN;
+        nSubsidy = 50000 * COIN;
     } else if ( nHeight > 852480 ) {
-	nSubsidy = 45000 * COIN;
+        nSubsidy = 45000 * COIN;
     } else if ( nHeight > 721440 ) {
         nSubsidy = 40000 * COIN;
     } else if ( nHeight > 590400 ) {
@@ -1115,10 +1115,20 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
         nSubsidy = 20000 * COIN;
     } else if ( nHeight > 70560 ) {
         nSubsidy = 12000 * COIN;
-    } else if ( nHeight > 1 ) {
+    } else if ( nHeight > 6 ) {
         nSubsidy = 10000 * COIN;
-    } else {
-        nSubsidy = 1770000000000 * COIN;
+    } else if ( nHeight == 6){
+        nSubsidy = 100000000000 * COIN;
+    } else if ( nHeight == 5){
+        nSubsidy = 100000000000 * COIN;
+    } else if ( nHeight == 4){
+        nSubsidy = 100000000000 * COIN;
+    } else if ( nHeight == 3){
+        nSubsidy = 600000000000 * COIN;
+    } else if ( nHeight == 2){
+        nSubsidy = 600000000000 * COIN;
+    } else if ( nHeight == 1){
+        nSubsidy = 250000000000 * COIN;
     }
 
     return nSubsidy + nFees;
@@ -1326,7 +1336,7 @@ unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const 
 
 unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
-        int DiffMode = 1; // legacy diff-mode
+/*        int DiffMode = 1; // legacy diff-mode
         if (fTestNet) {
                 if (pindexLast->nHeight+1 >= 2116) { DiffMode = 2; } // logos, 100 blocks after first legacy diff adjustment
         }
@@ -1335,7 +1345,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         }
         
         if                (DiffMode == 1) { return GetNextWorkRequired_V1(pindexLast, pblock); } //legacy diff mode
-        else if        (DiffMode == 2) { return GetNextWorkRequired_V2(pindexLast, pblock); } // KGW
+        else if        (DiffMode == 2) { return GetNextWorkRequired_V2(pindexLast, pblock); } */
         return GetNextWorkRequired_V2(pindexLast, pblock); // KGW
 }
 

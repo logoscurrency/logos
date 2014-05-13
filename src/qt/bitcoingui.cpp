@@ -220,7 +220,7 @@ void BitcoinGUI::createActions()
     startMiningAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(startMiningAction);
 
-    FAQAction = new QAction(QIcon(":/icons/faq"), tr("Frequently asked questions"), this);
+    FAQAction = new QAction(QIcon(":/icons/faq"), tr("FAQ"), this);
     FAQAction->setStatusTip(tr("Click to visit website"));
     FAQAction->setToolTip(FAQAction->statusTip());
     FAQAction->setCheckable(true);

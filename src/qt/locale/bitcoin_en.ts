@@ -347,7 +347,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+20"/>
         <source>&amp;Transactions</source>
-        <translation>&amp;Your payments and receipts</translation>
+        <translation>&amp;Payments and receipts</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -468,7 +468,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+101"/>
         <source>&amp;Send</source>
-        <translation>&amp;Make a Logos payment transfer</translation>
+        <translation>&amp;Make a Logos payment</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -478,7 +478,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+14"/>
         <source>&amp;Addresses</source>
-        <translation>&amp;All your saved payment counter-party wallet addresses</translation>
+        <translation>&amp;All saved payment counter-party wallet addresses</translation>
     </message>
     <message>
         <location line="+22"/>
