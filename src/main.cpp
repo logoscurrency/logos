@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0xb1ac6bdd557031f8b8ac2729b0c7889b0c17ccbac30a12afc4bb9902b59e22a9");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Logos: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2957,7 +2957,7 @@ bool InitBlockIndex() {
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce = 6951820;
+        block.nNonce = 8424363;
         block.nTime = 1399802141;
         
         if (fTestNet)
@@ -2979,6 +2979,14 @@ bool InitBlockIndex() {
         } else {
         	assert(block.hashMerkleRoot == uint256("0x3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b"));
         }
+
+/*	2014-05-13 22:49:31 found it!
+2014-05-13 22:49:31 CBlock(hash=b1ac6bdd557031f8b8ac2729b0c7889b0c17ccbac30a12afc4bb9902b59e22a9, input=0100000000000000000000000000000000000000000000000000000000000000000000006bb0fb74c780d12e553528d2a7eb380c381f7eb06b6efea75d18cd89bfc76d3f1d496f53f0ff0f1eab8b8000, PoW=000002df35aeee3997db0a95ef9dc54cbb61914f2f3bb804b6359c7056e052ef, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b, nTime=1399802141, nBits=1e0ffff0, nNonce=8424363, vtx=1)
+2014-05-13 22:49:31   CTransaction(hash=3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 0002e7031f5361792048656c6c6f20746f204c6f676f7320776520617265206c69766520)
+    CTxOut(error)
+  vMerkleTree: 3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b
+*/ 
         if (false &&block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
