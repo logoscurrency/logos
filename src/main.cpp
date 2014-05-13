@@ -1097,7 +1097,7 @@ unsigned char GetNfactor(int64 nTimestamp) {
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
 
-    int64 nSubsidy;
+    int64 nSubsidy = 0;
 
     if ( nHeight > 982080 ) {
         nSubsidy = 50000 * COIN;
@@ -2958,7 +2958,7 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nBits    = 0x1e0ffff0;
         block.nNonce = 6951820;
-        block.nTime = 1399802140;
+        block.nTime = 1399802141;
         
         if (fTestNet)
         {
@@ -2977,7 +2977,7 @@ bool InitBlockIndex() {
         {
         	assert(block.hashMerkleRoot == uint256("0x2b1279c6527b21f0c30520b5caf2f9d43ab8a346bc190d90f03b93c659350f2d"));
         } else {
-        	assert(block.hashMerkleRoot == uint256("0x"));
+        	assert(block.hashMerkleRoot == uint256("0x3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b"));
         }
         if (false &&block.GetHash() != hashGenesisBlock)
         {
