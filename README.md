@@ -1,24 +1,39 @@
 Logos integration/staging tree
 ================================
 
-http://www.logos.org
+http://www.logoscoin.org
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2011-2013 Litecoin Developers
+Copyright (c) 2014 Vertcoin Developers
 Copyright (c) 2014 Logos Developers
 
 What is Logos?
 ----------------
 
-Logos is a lite version of Bitcoin using scrypt-adaptive-N as a proof-of-work algorithm.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
- - 50 coins per block
+Logos is a fork of vertcoin a version of Bitcoin using scrypt-adaptive-N as a proof-of-work algorithm.
+ - 1 minute block targets
+ - 2,000,000,000,000 total coins
+ - Premining 1,750,000,000,000 LGS
+ - Block 1: 250,000,000,000 LGS
+ - Block 2 : 600,000,000,000 LGS
+ - Block 3 : 600,000,000,000 LGS
+ - Block 4 : 100,000,000,000 LGS
+ - Block 5 : 100,000,000,000 LGS
+ - Block 6 : 100,000,000,000
+ - Block 2 - 70,565: 10,000 LGS
+ - Block 70,565 - 201,605: 12,000 LGS
+ - Block 201,605 - 332,645: 20,000 LGS
+ - Block 332,645 - 460,805: 25,000 LGS
+ - Block 460,805 - 590,405: 30,000 LGS
+ - Block 590,405 - 721,445: 35,000 LGS
+ - Block 721,445 - 852,485: 40,000 LGS
+ - Block 852,485 - 982,085: 45,000 LGS
+ - Block > 982085: 50,005 LGS
  - Every block to retarget difficulty with Kimotos Gravity Well algorithm
 
 For more information, as well as an immediately useable, binary version of
-the Logos client sofware, see http://www.logos.org.
+the Logos client sofware, see http://www.logoscoin.org.
 
 License
 -------
