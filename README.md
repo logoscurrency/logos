@@ -13,7 +13,7 @@ What is Logos?
 
 Logos is a fork of vertcoin a version of Bitcoin using scrypt-adaptive-N as a proof-of-work algorithm.
  - 1 minute block targets
- - 2,000,000,000,000 total coins
+ - ~ 2,000,000,000,000 total coins
  - Premining 1,750,000,000,000 LGS
  - Block 1: 250,000,000,000 LGS
  - Block 2 : 600,000,000,000 LGS
@@ -21,7 +21,7 @@ Logos is a fork of vertcoin a version of Bitcoin using scrypt-adaptive-N as a pr
  - Block 4 : 100,000,000,000 LGS
  - Block 5 : 100,000,000,000 LGS
  - Block 6 : 100,000,000,000
- - Block 2 - 70,565: 10,000 LGS
+ - Block 7 - 70,565: 10,000 LGS
  - Block 70,565 - 201,605: 12,000 LGS
  - Block 201,605 - 332,645: 20,000 LGS
  - Block 332,645 - 460,805: 25,000 LGS
