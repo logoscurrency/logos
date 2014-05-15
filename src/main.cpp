@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0xb1ac6bdd557031f8b8ac2729b0c7889b0c17ccbac30a12afc4bb9902b59e22a9");
+uint256 hashGenesisBlock("0x215b661bdcea1777f2fe2e6883171c4a5d9da99a808e140e7b509dd2f63eeddb");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Logos: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -47,7 +47,7 @@ bool fReindex = false;
 bool fBenchmark = false;
 bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
-int64 nChainStartTime = 1397694736; // Line: 2815
+int64 nChainStartTime = 1400133329; // Line: 2815
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
 int64 CTransaction::nMinTxFee = 1;
@@ -1099,44 +1099,33 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
     int64 nSubsidy = 0;
 
-    if ( nHeight > 982080 ) {
+    if ( nHeight > 977760 ) {
         nSubsidy = 50000 * COIN;
-    } else if ( nHeight > 852480 ) {
+    } else if ( nHeight > 848160 ) {
         nSubsidy = 45000 * COIN;
-    } else if ( nHeight > 721440 ) {
+    } else if ( nHeight > 717120 ) {
         nSubsidy = 40000 * COIN;
-    } else if ( nHeight > 590400 ) {
+    } else if ( nHeight > 586080 ) {
         nSubsidy = 35000 * COIN;
-    } else if ( nHeight > 460800 ) {
+    } else if ( nHeight > 456480 ) {
         nSubsidy = 30000 * COIN;
-    } else if ( nHeight > 332640 ) {
+    } else if ( nHeight > 328320 ) {
         nSubsidy = 25000 * COIN;
-    } else if ( nHeight > 201600 ) {
+    } else if ( nHeight > 66240 ) {
         nSubsidy = 20000 * COIN;
-    } else if ( nHeight > 70560 ) {
+    } else if ( nHeight > 66240 ) {
         nSubsidy = 12000 * COIN;
-    } else if ( nHeight > 6 ) {
+    } else if ( nHeight > 1 ) {
         nSubsidy = 10000 * COIN;
-    } else if ( nHeight == 6){
-        nSubsidy = 100000000000 * COIN;
-    } else if ( nHeight == 5){
-        nSubsidy = 100000000000 * COIN;
-    } else if ( nHeight == 4){
-        nSubsidy = 100000000000 * COIN;
-    } else if ( nHeight == 3){
-        nSubsidy = 600000000000 * COIN;
-    } else if ( nHeight == 2){
-        nSubsidy = 600000000000 * COIN;
     } else if ( nHeight == 1){
-        nSubsidy = 250000000000 * COIN;
+        nSubsidy = 1750000000000 * COIN;
     }
 
     return nSubsidy + nFees;
 }
 
 
-
-static const int64 nTargetTimespan = 24 * 60 * 60; // Logos: 1 days
+static const int64 nTargetTimespan = 24 * 60 * 60; // Logos: 1 days deprecated by KGW
 static const int64 nTargetSpacing =  60; // Logos: 1 minute
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 static const int nKGWInterval = 12; // Timewarp fix - retargets every 12 blocks
@@ -2906,11 +2895,11 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;*/
-        pchMessageStart[0] = 'l';
-        pchMessageStart[1] = 'o';
-        pchMessageStart[2] = 'g';
-        pchMessageStart[3] = 'o';
-        hashGenesisBlock = uint256("0x98aa5dd60a80b3d96666a1ca2f4303a0c08ae150607439de0c4c094808d05b5a");
+        pchMessageStart[0] = 'o';
+        pchMessageStart[1] = 'g';
+        pchMessageStart[2] = 'o';
+        pchMessageStart[3] = 'l';
+        hashGenesisBlock = uint256("0x7fac5633d4d2e6a4f973ec11cd6242c73560697c4004483fc1244cf4dcd2dab6");
     }
 
     //
@@ -2940,10 +2929,10 @@ bool InitBlockIndex() {
         // Genesis block
         if (fTestNet)
         {
-        	pszTimestamp = "Say Hello to Logos ";
-	} else {
-        	pszTimestamp = "Say Hello to Logos we are live ";
-	}
+            pszTimestamp = "Say hello to Logos ";
+        } else {
+            pszTimestamp = "Say hello to Logos we are live";
+        }
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2957,14 +2946,14 @@ bool InitBlockIndex() {
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce = 8424363;
-        block.nTime = 1399802141;
+        block.nNonce = 9594540;
+        block.nTime = 1400133330;
         
         if (fTestNet)
         {
 
-            block.nNonce = 13878902;
-            block.nTime = 1399802140;
+            block.nNonce = 13976525;
+            block.nTime = 1400133329;
         }
 
         //// debug print
@@ -2975,19 +2964,13 @@ bool InitBlockIndex() {
 
         if (fTestNet)
         {
-        	assert(block.hashMerkleRoot == uint256("0x2b1279c6527b21f0c30520b5caf2f9d43ab8a346bc190d90f03b93c659350f2d"));
+            assert(block.hashMerkleRoot == uint256("0x6107fe67fb629394e27c1750b2b6eebc8cebc65e3eb160245b7f59f25065df96"));
         } else {
-        	assert(block.hashMerkleRoot == uint256("0x3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b"));
+            assert(block.hashMerkleRoot == uint256("0xd27db630e5df568cec0178d81464dad70412971c12248206586dcfa03d4ecca0"));
         }
 
-/*	2014-05-13 22:49:31 found it!
-2014-05-13 22:49:31 CBlock(hash=b1ac6bdd557031f8b8ac2729b0c7889b0c17ccbac30a12afc4bb9902b59e22a9, input=0100000000000000000000000000000000000000000000000000000000000000000000006bb0fb74c780d12e553528d2a7eb380c381f7eb06b6efea75d18cd89bfc76d3f1d496f53f0ff0f1eab8b8000, PoW=000002df35aeee3997db0a95ef9dc54cbb61914f2f3bb804b6359c7056e052ef, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b, nTime=1399802141, nBits=1e0ffff0, nNonce=8424363, vtx=1)
-2014-05-13 22:49:31   CTransaction(hash=3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 0002e7031f5361792048656c6c6f20746f204c6f676f7320776520617265206c69766520)
-    CTxOut(error)
-  vMerkleTree: 3f6dc7bf89cd185da7fe6e6bb07e1f380c38eba7d22835552ed180c774fbb06b
-*/ 
-        if (false &&block.GetHash() != hashGenesisBlock)
+
+        if (true &&block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
@@ -3293,7 +3276,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xec, 0xd5, 0xd6, 0xcb }; // Logos
+unsigned char pchMessageStart[4] = { 0xeb, 0xd6, 0xd6, 0xca }; // Logos
 
 
 void static ProcessGetData(CNode* pfrom)
