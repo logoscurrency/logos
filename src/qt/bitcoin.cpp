@@ -155,11 +155,11 @@ int main(int argc, char *argv[])
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     QApplication::setOrganizationName("Logos");
-    QApplication::setOrganizationDomain("logos.org");
+    QApplication::setOrganizationDomain("logoscoin.org");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
-        QApplication::setApplicationName("Logos-Qt-testnet");
+        QApplication::setApplicationName("Logosapp-testnet");
     else
-        QApplication::setApplicationName("Logos-Qt");
+        QApplication::setApplicationName("Logosapp");
 
     // ... then GUI settings:
     OptionsModel optionsModel;

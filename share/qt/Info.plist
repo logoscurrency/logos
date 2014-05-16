@@ -15,9 +15,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Logos-Qt</string>
+	<string>logosapp</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.logos.Logos-Qt</string>
+	<string>org.logoscoin.logosapp</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>

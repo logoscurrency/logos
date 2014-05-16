@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = logos-qt
-macx:TARGET = "Logos-Qt"
+TARGET = logosapp
+macx:TARGET = "logosapp"
 VERSION = 0.8.6.4
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
@@ -322,7 +322,7 @@ SOURCES += src/qt/test/test_main.cpp \
 HEADERS += src/qt/test/uritests.h
 DEPENDPATH += src/qt/test
 QT += testlib
-TARGET = logos-qt_test
+TARGET = logosapp_test
 DEFINES += BITCOIN_QT_TEST
   macx: CONFIG -= app_bundle
 }
@@ -361,7 +361,7 @@ OTHER_FILES += README.md \
     doc/*.rst \
     doc/*.txt \
     doc/*.md \
-    src/qt/res/logos-qt.rc \
+    src/qt/res/logosapp.rc \
     src/test/*.cpp \
     src/test/*.h \
     src/qt/test/*.cpp \
@@ -398,7 +398,7 @@ isEmpty(BOOST_INCLUDE_PATH) {
 }
 
 win32:DEFINES += WIN32
-win32:RC_FILE = src/qt/res/logos-qt.rc
+win32:RC_FILE = src/qt/res/logosapp.rc
 
 win32:!contains(MINGW_THREAD_BUGFIX, 0) {
     # At least qmake's win32-g++-cross profile is missing the -lmingwthrd
