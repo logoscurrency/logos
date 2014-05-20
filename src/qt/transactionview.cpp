@@ -128,7 +128,7 @@ TransactionView::TransactionView(QWidget *parent) :
     QAction *copyTxIDAction = new QAction(tr("Copy transaction ID"), this);
     QAction *editLabelAction = new QAction(tr("Edit label"), this);
     QAction *showDetailsAction = new QAction(tr("Show transaction details"), this);
-    QAction *viewOnVertExplorerAction = new QAction(tr("View on VertExplorer"), this);
+    QAction *viewOnVertExplorerAction = new QAction(tr("View on Logosxplorer"), this);
 
     contextMenu = new QMenu();
     contextMenu->addAction(copyAddressAction);
@@ -389,7 +389,7 @@ void TransactionView::viewOnVertExplorer()
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
     if(!selection.isEmpty())
     {
-        QString format("http://www.logosmining.com/explorer/block_crawler.php?=transaction=");
+        QString format("http://logosxplorer.info/block_crawler.php?transaction=");
         format += selection.at(0).data(TransactionTableModel::TxIDRole).toString();
 
         QDesktopServices::openUrl(QUrl(format));

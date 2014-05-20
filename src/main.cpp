@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x215b661bdcea1777f2fe2e6883171c4a5d9da99a808e140e7b509dd2f63eeddb");
+uint256 hashGenesisBlock("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Logos: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -47,7 +47,7 @@ bool fReindex = false;
 bool fBenchmark = false;
 bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
-int64 nChainStartTime = 1400133329; // Line: 2815
+int64 nChainStartTime = 1400594400; // Line: 2815
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
 int64 CTransaction::nMinTxFee = 1;
@@ -1099,24 +1099,24 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
     int64 nSubsidy = 0;
 
-    if ( nHeight > 977760 ) {
-        nSubsidy = 50000 * COIN;
-    } else if ( nHeight > 848160 ) {
-        nSubsidy = 45000 * COIN;
-    } else if ( nHeight > 717120 ) {
-        nSubsidy = 40000 * COIN;
-    } else if ( nHeight > 586080 ) {
-        nSubsidy = 35000 * COIN;
-    } else if ( nHeight > 456480 ) {
-        nSubsidy = 30000 * COIN;
-    } else if ( nHeight > 328320 ) {
-        nSubsidy = 25000 * COIN;
-    } else if ( nHeight > 66240 ) {
-        nSubsidy = 20000 * COIN;
-    } else if ( nHeight > 66240 ) {
-        nSubsidy = 12000 * COIN;
+    if ( nHeight > 970560 ) {
+        nSubsidy = 50000 * COIN; 
+    } else if ( nHeight > 840960 ) {
+        nSubsidy = 45000 * COIN; //Q1 2016
+    } else if ( nHeight > 709920 ) {
+        nSubsidy = 40000 * COIN; //Q4 2015
+    } else if ( nHeight > 578880 ) {
+        nSubsidy = 35000 * COIN; //Q3 2015
+    } else if ( nHeight > 449280 ) {
+        nSubsidy = 30000 * COIN; //Q2 2015
+    } else if ( nHeight > 321120 ) {
+        nSubsidy = 25000 * COIN; //Q1 2015
+    } else if ( nHeight > 190080 ) {
+        nSubsidy = 20000 * COIN; //Q4 2014
+    } else if ( nHeight > 59040 ) {
+        nSubsidy = 12000 * COIN; //Q3 2014
     } else if ( nHeight > 1 ) {
-        nSubsidy = 10000 * COIN;
+        nSubsidy = 10000 * COIN; //Q2 2014
     } else if ( nHeight == 1){
         nSubsidy = 1750000000000 * COIN;
     }
@@ -2895,11 +2895,11 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;*/
-        pchMessageStart[0] = 'o';
-        pchMessageStart[1] = 'g';
-        pchMessageStart[2] = 'o';
-        pchMessageStart[3] = 'l';
-        hashGenesisBlock = uint256("0x7fac5633d4d2e6a4f973ec11cd6242c73560697c4004483fc1244cf4dcd2dab6");
+        pchMessageStart[0] = 'l';
+        pchMessageStart[1] = 'o';
+        pchMessageStart[2] = 'g';
+        pchMessageStart[3] = 'o';
+        hashGenesisBlock = uint256("0x");
     }
 
     //
@@ -2929,16 +2929,21 @@ bool InitBlockIndex() {
         // Genesis block
         if (fTestNet)
         {
-            pszTimestamp = "Say hello to Logos ";
+            pszTimestamp = "Its Logos testnet";
         } else {
-            pszTimestamp = "Say hello to Logos we are live";
+            pszTimestamp = "2014/05/20: Say hello to Logos we are live";
         }
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
-        txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(999) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+	txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript();
+        if (fTestNet)
+        {
+            txNew.vout[0].scriptPubKey = CScript() << ParseHex("0478F67C96269AC3EC8C61FFE89D1C658D47BCA4EAFC7A326C7D5F401045272A4C41358C0E0B981A2BDC1F2CDFF2593FBBECC4C81465CB8BC977A8B9ECD1AF1982") << OP_CHECKSIG;
+        } else {
+            txNew.vout[0].scriptPubKey = CScript() << ParseHex("0472A4C7C3DDBDF4EAAA13F1BCAB8A758674E5AF17330EE2E14A62FA744D427E60DC1BFD4B9712C6A4A661C703237D199F5A5B39E26B31815D4717DABAA79FEBE6") << OP_CHECKSIG;
+        }
         
         CBlock block;
         block.vtx.push_back(txNew);
@@ -2947,13 +2952,13 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nBits    = 0x1e0ffff0;
         block.nNonce = 9594540;
-        block.nTime = 1400133330;
+        block.nTime = 1400594400;
         
         if (fTestNet)
         {
 
             block.nNonce = 13976525;
-            block.nTime = 1400133329;
+            block.nTime = 1400594399;
         }
 
         //// debug print
@@ -2964,9 +2969,9 @@ bool InitBlockIndex() {
 
         if (fTestNet)
         {
-            assert(block.hashMerkleRoot == uint256("0x6107fe67fb629394e27c1750b2b6eebc8cebc65e3eb160245b7f59f25065df96"));
+            assert(block.hashMerkleRoot == uint256("0x"));
         } else {
-            assert(block.hashMerkleRoot == uint256("0xd27db630e5df568cec0178d81464dad70412971c12248206586dcfa03d4ecca0"));
+            assert(block.hashMerkleRoot == uint256("0x"));
         }
 
 
@@ -3276,7 +3281,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xeb, 0xd6, 0xd6, 0xca }; // Logos
+unsigned char pchMessageStart[4] = { 0xeb, 0xc6, 0xd6, 0xca }; // Logos
 
 
 void static ProcessGetData(CNode* pfrom)
