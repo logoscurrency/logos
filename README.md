@@ -15,22 +15,17 @@ Logos is a fork of vertcoin a version of Bitcoin using scrypt-adaptive-N as a pr
  - 1 minute block targets
  - ~ 2,000,000,000,000 total coins
  - Premining 1,750,000,000,000 LGS
- - Block 1: 250,000,000,000 LGS
- - Block 2 : 600,000,000,000 LGS
- - Block 3 : 600,000,000,000 LGS
- - Block 4 : 100,000,000,000 LGS
- - Block 5 : 100,000,000,000 LGS
- - Block 6 : 100,000,000,000
- - Block 7 - 70,565: 10,000 LGS
- - Block 70,565 - 201,605: 12,000 LGS
- - Block 201,605 - 332,645: 20,000 LGS
- - Block 332,645 - 460,805: 25,000 LGS
- - Block 460,805 - 590,405: 30,000 LGS
- - Block 590,405 - 721,445: 35,000 LGS
- - Block 721,445 - 852,485: 40,000 LGS
- - Block 852,485 - 982,085: 45,000 LGS
- - Block > 982085: 50,005 LGS
- - Every block to retarget difficulty with Kimotos Gravity Well algorithm
+ - Block 1: 1,750,000,000,000 LGS
+ - Block 2 - 59,040: 10,000 LGS
+ - Block 59,041 - 190,080: 12,000 LGS
+ - Block 190,081 - 321,120: 20,000 LGS
+ - Block 321,121 - 449,280: 25,000 LGS
+ - Block 449,281 - 578,880: 30,000 LGS
+ - Block 578,881 - 709,920: 35,000 LGS
+ - Block 709,921 - 840,960: 40,000 LGS
+ - Block 840,961 - 970,560: 45,000 LGS
+ - Block > 970560: 50,000 LGS
+ - Difficulty retarget with Kimotos Gravity Well algorithm
 
 For more information, as well as an immediately useable, binary version of
 the Logos client sofware, see http://www.logoscoin.org.
